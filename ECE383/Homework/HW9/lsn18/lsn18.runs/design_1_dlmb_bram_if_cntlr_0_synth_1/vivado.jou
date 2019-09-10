@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Feb 25 22:38:21 2018
+# Process ID: 7172
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_dlmb_bram_if_cntlr_0_synth_1
+# Command line: vivado.exe -log design_1_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_bram_if_cntlr_0.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_dlmb_bram_if_cntlr_0.tcl -notrace

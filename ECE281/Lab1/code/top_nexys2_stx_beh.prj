@@ -1,0 +1,2 @@
+vhdl isim_temp "sevenSegDecoder.vhd"
+vhdl isim_temp "top_nexys2.vhd"

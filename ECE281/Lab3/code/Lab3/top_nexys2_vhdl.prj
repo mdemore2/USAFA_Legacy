@@ -1,0 +1,7 @@
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\thunderbird_fsm.vhd"
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\TDM4.vhd"
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\synchronizer.vhd"
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\sevenSegDecoder.vhd"
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\clock_divder.vhd"
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\additionalElevatorController.vhd"
+vhdl work "C:\Users\C19Mark.Demore\Documents\ECE281_Repo\Lab3\code\Lab3\top_nexys2.vhd"

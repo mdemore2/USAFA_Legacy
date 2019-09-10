@@ -1,0 +1,2 @@
+vhdl work "clock_divder.vhd"
+vhdl work "clock_divider_tb.vhd"

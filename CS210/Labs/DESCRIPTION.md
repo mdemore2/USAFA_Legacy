@@ -1,0 +1,1 @@
+This folder contains daily lab programs (LABs).

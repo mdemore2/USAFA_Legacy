@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab4.srcs/sources_1/imports/code/Audio_Codec_Wrapper.vhd" \
+"../../../../lab4.srcs/sources_1/imports/code/TWICtl.vhd" \
+"../../../../lab4.srcs/sources_1/imports/code/i2s_ctl.vhd" \
+"../../../../lab4.srcs/sources_1/new/lab4.vhd" \
+"../../../../lab4.srcs/sim_1/new/lab4_tb.vhd" \
+
+# Do not sort compile order
+nosort

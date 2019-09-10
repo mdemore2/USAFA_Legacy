@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1/LinkedList.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+LinkedList.h
+/cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1/LinkedList.h
+
+/cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1/LinkedList.h
+
+/cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1/main.c
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/wait.h
+-
+LinkedList.h
+/cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1/LinkedList.h
+

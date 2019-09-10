@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Jan  9 10:21:43 2018
+# Process ID: 11896
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7748 C:\Users\C19Mark.Demore\Documents\Demore_ECE383\Lesson Examples\lsn1\lsn1.xpr
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn1/vivado.log
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn1/lsn1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source lec1_tb.tcl
+close_sim

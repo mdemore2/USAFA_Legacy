@@ -1,0 +1,27 @@
+0.6
+2017.3
+Oct  4 2017
+20:11:37
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/addrCounter.vhdl,1518454353,vhdl,,,,addrcounter,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/counter.vhdl,1516643415,vhdl,,,,counter,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/counterVert.vhd,1516813336,vhdl,,,,countervert,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/dvid.vhdl,1516636818,vhdl,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/video.vhdl,,,dvid,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/lab1.vhdl,1518474764,vhdl,,,,lab1,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/scopeface.vhdl,1517460963,vhdl,,,,scopeface,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/tdms.vhdl,1516636825,vhdl,,,,tdms_encoder,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/vga.vhdl,1517011382,vhdl,,,,vga,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 1 Imports/video.vhdl,1518112116,vhdl,,,,video,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/Audio_Codec_Wrapper.vhd,1517939158,vhdl,,,,audio_codec_wrapper,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/Lab2_datapath_tb.vhd,1517939153,vhdl,,,,lab2_datapath_tb,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/TWICtl.vhd,1517939183,vhdl,,,,twictl;twiutils,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/audio_init.v,1517939175,verilog,,,,audio_init,,,../../../../lab2.srcs/sources_1/ip/clk_wiz_0;../../../../lab2.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/i2s_ctl.vhd,1517939168,vhdl,,,,i2s_ctl,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/lab2.vhd,1517939145,vhdl,,,,lab2,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/lab2_pack.vhdl,1517939213,vhdl,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/Lab2_datapath_tb.vhd,,,lab2parts,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1518112172,verilog,,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/imports/Lab 2/audio_init.v,,clk_wiz_0,,,../../../../lab2.srcs/sources_1/ip/clk_wiz_0;../../../../lab2.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1518112172,verilog,,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../lab2.srcs/sources_1/ip/clk_wiz_0;../../../../lab2.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,1518065318,verilog,,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,clk_wiz_1,,,../../../../lab2.srcs/sources_1/ip/clk_wiz_0;../../../../lab2.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v,1518065318,verilog,,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,,clk_wiz_1_clk_wiz,,,../../../../lab2.srcs/sources_1/ip/clk_wiz_0;../../../../lab2.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/new/lab2_datapath.vhd,1518476371,vhdl,,,,lab2_datapath,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 2/lab2/lab2.srcs/sources_1/new/lab2_fsm.vhd,1517940162,vhdl,,,,lab2_fsm,,,,,,,,

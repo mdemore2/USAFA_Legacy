@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4403980910008242426  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 59ec751a39804270bb13b6ca89bbf5f1 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_8 -L dft_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab2_datapath_tb_behav xil_defaultlib.Lab2_datapath_tb xil_defaultlib.glbl" , 
+    buildDate : "Oct  4 2017" , 
+    buildTime : "20:11:37" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2017.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Lab2_datapath_tb_behav/xsimk.exe\"   \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_1.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_2.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_3.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_4.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_5.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_6.win64.obj\" \"xsim.dir/Lab2_datapath_tb_behav/obj/xsim_7.win64.obj\" \"C:\\Xilinx\\Vivado\\2017.3\\lib\\win64.o\\\\librdi_simulator_kernel.dll\" \"C:\\Xilinx\\Vivado\\2017.3\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

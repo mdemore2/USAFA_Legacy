@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L xil_defaultlib -L xpm -L xbip_utils_v3_0_8 -L dft_v4_0_14 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.dft_0 xil_defaultlib.glbl -o dft_0_opt

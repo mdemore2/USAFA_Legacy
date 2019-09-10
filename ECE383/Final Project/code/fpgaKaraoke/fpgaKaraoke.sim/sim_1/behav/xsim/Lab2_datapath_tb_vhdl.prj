@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fpgaKaraoke.srcs/sources_1/ip/dft_0/sim/dft_0.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 2/Audio_Codec_Wrapper.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 2/lab2_pack.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 2/TWICtl.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/addrCounter.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/counter.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/counterVert.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/dvid.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/code/filterBlock.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 2/i2s_ctl.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/lab1.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/new/lab2_datapath.vhd" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/scopeface.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/tdms.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/vga.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 1 Imports/video.vhdl" \
+"../../../../fpgaKaraoke.srcs/sources_1/imports/Lab 2/Lab2_datapath_tb.vhd" \
+
+# Do not sort compile order
+nosort

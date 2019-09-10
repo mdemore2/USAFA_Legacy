@@ -1,0 +1,2 @@
+vhdl work "thunderbird_fsm.vhd"
+vhdl work "thunderbird_tb.vhd"

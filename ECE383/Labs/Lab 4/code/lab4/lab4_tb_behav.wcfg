@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab4_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab4_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+<<<<<<< HEAD
+      <ZoomStartTime time="19293916667fs"></ZoomStartTime>
+      <ZoomEndTime time="19382216668fs"></ZoomEndTime>
+      <Cursor1Time time="19305000000fs"></Cursor1Time>
+=======
+      <ZoomStartTime time="198375000000fs"></ZoomStartTime>
+      <ZoomEndTime time="211675000001fs"></ZoomEndTime>
+      <Cursor1Time time="201095000000fs"></Cursor1Time>
+>>>>>>> master
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+   </column_width_setting>
+<<<<<<< HEAD
+   <WVObjectSize size="19" />
+=======
+   <WVObjectSize size="11" />
+>>>>>>> master
+   <wvobject fp_name="/lab4_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/ac_adc_sdata" type="logic">
+      <obj_property name="ElementShortName">ac_adc_sdata</obj_property>
+      <obj_property name="ObjectShortName">ac_adc_sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/ac_mclk" type="logic">
+      <obj_property name="ElementShortName">ac_mclk</obj_property>
+      <obj_property name="ObjectShortName">ac_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/ac_dac_sdata" type="logic">
+      <obj_property name="ElementShortName">ac_dac_sdata</obj_property>
+      <obj_property name="ObjectShortName">ac_dac_sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/ac_bclk" type="logic">
+      <obj_property name="ElementShortName">ac_bclk</obj_property>
+      <obj_property name="ObjectShortName">ac_bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/ac_lrclk" type="logic">
+      <obj_property name="ElementShortName">ac_lrclk</obj_property>
+      <obj_property name="ObjectShortName">ac_lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/uut/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+<<<<<<< HEAD
+   <wvobject fp_name="/lab4_tb/uut/nextaddr" type="array">
+      <obj_property name="ElementShortName">nextaddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nextaddr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/uut/adder1" type="array">
+      <obj_property name="ElementShortName">adder1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/uut/bout1" type="array">
+      <obj_property name="ElementShortName">bout1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bout1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/uut/raddr1" type="array">
+      <obj_property name="ElementShortName">raddr1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr1[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/uut/baseval" type="array">
+      <obj_property name="ElementShortName">baseval[15:0]</obj_property>
+      <obj_property name="ObjectShortName">baseval[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_tb/uut/L_bus_in" type="array">
+      <obj_property name="ElementShortName">L_bus_in[17:0]</obj_property>
+      <obj_property name="ObjectShortName">L_bus_in[17:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+=======
+   <wvobject fp_name="/lab4_tb/uut/L_bus_out" type="array">
+      <obj_property name="ElementShortName">L_bus_out[17:0]</obj_property>
+      <obj_property name="ObjectShortName">L_bus_out[17:0]</obj_property>
+>>>>>>> master
+   </wvobject>
+</wave_config>

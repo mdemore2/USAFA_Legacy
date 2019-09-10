@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,../../../../../../../../../../../Xilinx/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../../Xilinx/Vivado/2017.3/data/ip/xpm/xpm_VCOMP.vhd,
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_8,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+dft_v4_0_vh_rfs.vhd,vhdl,dft_v4_0_14,../../../ipstatic/hdl/dft_v4_0_vh_rfs.vhd,
+dft_0.vhd,vhdl,xil_defaultlib,../../../../fpgaKaraoke.srcs/sources_1/ip/dft_0/sim/dft_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Feb 25 22:24:12 2018
+# Process ID: 11584
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_microblaze_0_0_synth_1
+# Command line: vivado.exe -log design_1_microblaze_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_0_0.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_microblaze_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_microblaze_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 354.430 ; gain = 96.430
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:190]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (63#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:190]
+Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 672.980 ; gain = 414.980
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 672.980 ; gain = 414.980
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 987.461 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:10 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:17 ; elapsed = 00:02:30 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Timing Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:35 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Technology Mapping : Time (s): cpu = 00:02:28 ; elapsed = 00:02:41 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished IO Insertion : Time (s): cpu = 00:02:30 ; elapsed = 00:02:44 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:30 ; elapsed = 00:02:44 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:31 ; elapsed = 00:02:45 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:32 ; elapsed = 00:02:45 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:32 ; elapsed = 00:02:45 . Memory (MB): peak = 987.461 ; gain = 729.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:32 ; elapsed = 00:02:45 . Memory (MB): peak = 987.461 ; gain = 729.461
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2B1L    |     4|
+|2     |CARRY4     |     1|
+|3     |LUT1       |    33|
+|4     |LUT2       |   101|
+|5     |LUT3       |   332|
+|6     |LUT4       |   195|
+|7     |LUT5       |   368|
+|8     |LUT6       |   490|
+|9     |LUT6_2     |    64|
+|10    |MULT_AND   |     1|
+|11    |MUXCY_L    |   173|
+|12    |MUXF7      |   115|
+|13    |RAM32M     |    16|
+|14    |RAM32X1D   |    32|
+|15    |RAMB36E1   |     2|
+|16    |RAMB36E1_1 |     8|
+|17    |SRL16E     |   166|
+|18    |SRLC16E    |     8|
+|19    |XORCY      |    94|
+|20    |FDCE       |   143|
+|21    |FDE        |    32|
+|22    |FDR        |   125|
+|23    |FDRE       |  1745|
+|24    |FDS        |     1|
+|25    |FDSE       |    60|
++------+-----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:32 ; elapsed = 00:02:45 . Memory (MB): peak = 987.461 ; gain = 729.461
+synth_design: Time (s): cpu = 00:02:39 ; elapsed = 00:02:53 . Memory (MB): peak = 987.461 ; gain = 737.566

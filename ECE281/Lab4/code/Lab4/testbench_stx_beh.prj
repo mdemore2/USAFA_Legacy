@@ -1,0 +1,3 @@
+vhdl isim_temp "mips_combo.vhd"
+vhdl isim_temp "mips_combo_tb.vhd"
+vhdl isim_temp "alu.vhd"

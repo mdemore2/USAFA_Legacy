@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Jan 25 22:00:43 2018
+# Process ID: 9640
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 1/lab1/lab1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 1/lab1/lab1.sim/sim_1/behav/xsim/xsim.dir/lab1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 1/lab1/lab1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 1/lab1/lab1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab -notrace

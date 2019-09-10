@@ -1,0 +1,2 @@
+vhdl isim_temp "clock_divder.vhd"
+vhdl isim_temp "clock_divider_tb.vhd"

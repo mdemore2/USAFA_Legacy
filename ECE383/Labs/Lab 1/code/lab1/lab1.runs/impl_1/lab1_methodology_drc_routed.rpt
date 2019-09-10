@@ -1,0 +1,158 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed Jan 31 22:17:07 2018
+| Host         : c19mademore running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file lab1_methodology_drc_routed.rpt -pb lab1_methodology_drc_routed.pb -rpx lab1_methodology_drc_routed.rpx
+| Design       : lab1
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 24
++-----------+----------+---------------------------------------------------+------------+
+| Rule      | Severity | Description                                       | Violations |
++-----------+----------+---------------------------------------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch                                 | 23         |
+| XDCC-2    | Warning  | Scoped Non-Timing constraint/property overwritten | 1          |
++-----------+----------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch old_reg[0] cannot be properly analyzed as its control pin old_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch old_reg[1] cannot be properly analyzed as its control pin old_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch old_reg[2] cannot be properly analyzed as its control pin old_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch trigger_time_reg[0] cannot be properly analyzed as its control pin trigger_time_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch trigger_time_reg[1] cannot be properly analyzed as its control pin trigger_time_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch trigger_time_reg[2] cannot be properly analyzed as its control pin trigger_time_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch trigger_time_reg[3] cannot be properly analyzed as its control pin trigger_time_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch trigger_time_reg[4] cannot be properly analyzed as its control pin trigger_time_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch trigger_time_reg[5] cannot be properly analyzed as its control pin trigger_time_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch trigger_time_reg[6] cannot be properly analyzed as its control pin trigger_time_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch trigger_time_reg[7] cannot be properly analyzed as its control pin trigger_time_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch trigger_time_reg[8] cannot be properly analyzed as its control pin trigger_time_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch trigger_time_reg[9] cannot be properly analyzed as its control pin trigger_time_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[0] cannot be properly analyzed as its control pin trigger_volt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[1] cannot be properly analyzed as its control pin trigger_volt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[2] cannot be properly analyzed as its control pin trigger_volt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[3] cannot be properly analyzed as its control pin trigger_volt_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[4] cannot be properly analyzed as its control pin trigger_volt_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[5] cannot be properly analyzed as its control pin trigger_volt_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[6] cannot be properly analyzed as its control pin trigger_volt_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[7] cannot be properly analyzed as its control pin trigger_volt_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[8] cannot be properly analyzed as its control pin trigger_volt_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch trigger_volt_reg[9] cannot be properly analyzed as its control pin trigger_volt_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-2#1 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 1/code/lab1/lab1.srcs/constrs_1/imports/Lab 1/Lab1.xdc (Line: 38)
+Previous Source: c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 1/code/lab1/lab1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc (Line: 4)
+Related violations: <none>
+
+

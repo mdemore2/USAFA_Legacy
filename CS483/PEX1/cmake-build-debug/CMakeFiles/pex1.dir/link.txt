@@ -1,0 +1,1 @@
+/usr/bin/cc  -g  -Wl,--enable-auto-import CMakeFiles/pex1.dir/main.c.o CMakeFiles/pex1.dir/LinkedList.c.o  -o pex1.exe -Wl,--out-implib,libpex1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

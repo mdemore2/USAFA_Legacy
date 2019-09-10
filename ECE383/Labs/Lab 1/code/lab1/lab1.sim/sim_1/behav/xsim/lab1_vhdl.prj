@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab1.srcs/sources_1/new/counterVert.vhd" \
+"../../../../lab1.srcs/sources_1/imports/Lab 1/dvid.vhdl" \
+"../../../../lab1.srcs/sources_1/imports/Lab 1/tdms.vhdl" \
+"../../../../lab1.srcs/sources_1/new/vga.vhdl" \
+"../../../../lab1.srcs/sources_1/imports/Lab 1/video.vhdl" \
+"../../../../lab1.srcs/sources_1/imports/Lab 1/lab1.vhdl" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_My_Counter_IP_0_0_synth_1" LaunchDir="C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.runs/design_1_My_Counter_IP_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

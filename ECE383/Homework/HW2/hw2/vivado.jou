@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Jan 11 11:34:25 2018
+# Process ID: 12024
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW2/hw2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12236 C:\Users\C19Mark.Demore\Documents\Demore_ECE383\Homework\HW2\hw2\hw2.xpr
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW2/hw2/vivado.log
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW2/hw2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW2/hw2/hw2.xpr
+update_compile_order -fileset sources_1

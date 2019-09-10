@@ -1,0 +1,2 @@
+vhdl work "MooreElevatorController_Shell.vhd"
+vhdl work "additionalElevatorController.vhd"

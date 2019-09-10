@@ -1,0 +1,2 @@
+vhdl work "Demore_CE1_top.vhf"
+vhdl work "../code/CE1_Demore_tb.vhd"

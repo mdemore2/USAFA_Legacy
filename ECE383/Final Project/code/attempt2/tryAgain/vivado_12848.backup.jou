@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Apr 30 13:57:34 2018
+# Process ID: 12848
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/attempt2/tryAgain
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8680 C:\Users\C19Mark.Demore\Documents\Demore_ECE383\Final Project\code\attempt2\tryAgain\tryAgain.xpr
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/attempt2/tryAgain/vivado.log
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/attempt2/tryAgain\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/attempt2/tryAgain/tryAgain.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+import_files -norecurse {{C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/digitalFilter_pack.vhdl} {C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/filterBlock.vhd}}
+update_compile_order -fileset sources_1

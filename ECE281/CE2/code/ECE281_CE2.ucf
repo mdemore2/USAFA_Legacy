@@ -1,0 +1,7 @@
+# Leds
+NET "o_S"  LOC = "J14"; # led0
+NET "o_Cout"  LOC = "J15"; # led1
+
+# Switches
+NET "i_B" LOC = "G18"; # sw0
+NET "i_A" LOC = "H18"; # sw1

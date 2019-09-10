@@ -1,0 +1,4 @@
+C:\Users\C19Mark.Demore\.CLion2017.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/C19Mark.Demore/Documents/CS483_OS/PEX1/cmake-build-debug

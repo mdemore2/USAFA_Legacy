@@ -1,0 +1,3 @@
+vhdl work "thunderbird_fsm.vhd"
+vhdl work "clock_divider.vhd"
+vhdl work "top_nexys2.vhd"

@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Apr 25 09:51:50 2018
+# Process ID: 4720
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/fpgaKaraoke.runs/dft_0_synth_1
+# Command line: vivado.exe -log dft_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dft_0.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/fpgaKaraoke.runs/dft_0_synth_1/dft_0.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/fpgaKaraoke.runs/dft_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dft_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 348.484 ; gain = 93.633
+INFO: [Synth 8-638] synthesizing module 'dft_0' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/fpgaKaraoke.srcs/sources_1/ip/dft_0/synth/dft_0.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'dft_0' (40#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/fpgaKaraoke.srcs/sources_1/ip/dft_0/synth/dft_0.vhd:77]
+Finished RTL Elaboration : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 535.516 ; gain = 280.664
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:10 ; elapsed = 00:02:27 . Memory (MB): peak = 535.516 ; gain = 280.664
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.518 . Memory (MB): peak = 801.203 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:03:00 ; elapsed = 00:03:25 . Memory (MB): peak = 801.203 ; gain = 546.352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:00 ; elapsed = 00:03:25 . Memory (MB): peak = 801.203 ; gain = 546.352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:00 ; elapsed = 00:03:25 . Memory (MB): peak = 801.203 ; gain = 546.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:10 ; elapsed = 00:03:36 . Memory (MB): peak = 801.203 ; gain = 546.352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:02 ; elapsed = 00:04:31 . Memory (MB): peak = 801.203 ; gain = 546.352
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:36 ; elapsed = 00:05:08 . Memory (MB): peak = 801.203 ; gain = 546.352
+Finished Timing Optimization : Time (s): cpu = 00:04:43 ; elapsed = 00:05:16 . Memory (MB): peak = 806.426 ; gain = 551.574
+Finished Technology Mapping : Time (s): cpu = 00:04:58 ; elapsed = 00:05:31 . Memory (MB): peak = 839.621 ; gain = 584.770
+Finished IO Insertion : Time (s): cpu = 00:05:01 ; elapsed = 00:05:35 . Memory (MB): peak = 839.621 ; gain = 584.770
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:01 ; elapsed = 00:05:35 . Memory (MB): peak = 839.621 ; gain = 584.770
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:06 ; elapsed = 00:05:39 . Memory (MB): peak = 839.621 ; gain = 584.770
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:06 ; elapsed = 00:05:40 . Memory (MB): peak = 839.621 ; gain = 584.770
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:07 ; elapsed = 00:05:40 . Memory (MB): peak = 839.621 ; gain = 584.770
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:07 ; elapsed = 00:05:40 . Memory (MB): peak = 839.621 ; gain = 584.770
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |DSP48E_bbox_3    |     1|
+|2     |DSP48E_bbox_3__1 |     1|
+|3     |DSP48E_bbox_3__2 |     1|
+|4     |DSP48E_bbox_3__3 |     1|
+|5     |DSP48E_bbox_4    |     1|
+|6     |DSP48E_bbox_4__1 |     1|
+|7     |DSP48E_bbox_4__2 |     1|
+|8     |DSP48E_bbox_4__3 |     1|
+|9     |DSP48E_bbox_4__4 |     1|
+|10    |DSP48E_bbox_4__5 |     1|
+|11    |DSP48E_bbox_5    |     1|
+|12    |DSP48E_bbox_5__1 |     1|
+|13    |DSP48E_bbox_5__2 |     1|
+|14    |DSP48E_bbox_5__3 |     1|
+|15    |DSP48E_bbox_6    |     1|
+|16    |DSP48E_bbox_6__1 |     1|
+|17    |CARRY4           |   342|
+|18    |LUT1             |    61|
+|19    |LUT2             |   722|
+|20    |LUT3             |  1745|
+|21    |LUT4             |   706|
+|22    |LUT5             |   374|
+|23    |LUT6             |   786|
+|24    |MUXF6            |    36|
+|25    |MUXF7            |     7|
+|26    |RAMB16           |     3|
+|27    |RAMB18SDP        |     4|
+|28    |SRL16E           |   493|
+|29    |SRLC32E          |    48|
+|30    |FDRE             |  4874|
+|31    |FDSE             |    15|
++------+-----------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:07 ; elapsed = 00:05:40 . Memory (MB): peak = 839.621 ; gain = 584.770
+synth_design: Time (s): cpu = 00:05:22 ; elapsed = 00:05:56 . Memory (MB): peak = 839.621 ; gain = 592.160
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 839.621 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 839.621 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 839.621 ; gain = 0.000

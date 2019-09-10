@@ -1,0 +1,2 @@
+vhdl work "MealyElevatorController_Shell.vhd"
+vhdl work "Mealy_tb.vhd"

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Feb 25 22:26:58 2018
+# Process ID: 10508
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_microblaze_0_xlconcat_0_synth_1
+# Command line: vivado.exe -log design_1_microblaze_0_xlconcat_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_0_xlconcat_0.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_microblaze_0_xlconcat_0_synth_1/design_1_microblaze_0_xlconcat_0.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.runs/design_1_microblaze_0_xlconcat_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_microblaze_0_xlconcat_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 349.609 ; gain = 94.398
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (1#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (2#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 392.250 ; gain = 137.039
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 392.250 ; gain = 137.039
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 648.168 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 648.168 ; gain = 392.957
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 648.168 ; gain = 392.957
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 648.168 ; gain = 392.957
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 648.168 ; gain = 392.957
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 648.168 ; gain = 392.957
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 681.129 ; gain = 425.918
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 681.129 ; gain = 425.918
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 690.270 ; gain = 435.059
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 690.270 ; gain = 435.059
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 709.496 ; gain = 462.676

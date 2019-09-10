@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab2.srcs/sources_1/imports/Lab 2/Audio_Codec_Wrapper.vhd" \
+"../../../../lab2.srcs/sources_1/imports/Lab 2/lab2_pack.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 2/TWICtl.vhd" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/addrCounter.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/counter.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/counterVert.vhd" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/dvid.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 2/i2s_ctl.vhd" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/lab1.vhdl" \
+"../../../../lab2.srcs/sources_1/new/lab2_datapath.vhd" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/scopeface.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/tdms.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/vga.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 1 Imports/video.vhdl" \
+"../../../../lab2.srcs/sources_1/imports/Lab 2/Lab2_datapath_tb.vhd" \
+
+# Do not sort compile order
+nosort

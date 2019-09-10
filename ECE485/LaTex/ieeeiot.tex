@@ -1,0 +1,285 @@
+\documentclass[journal]{./IEEEtran/IEEEtran}
+%\IEEEoverridecommandlockouts
+\usepackage{color}
+\usepackage{listings}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\usepackage{makecell}
+\usepackage{enumitem}
+\renewcommand\theadfont{\bfseries}
+\input{../Preamble/myTables}
+\input{../Preamble/myFigures}
+\usepackage{subcaption}
+\makeatletter
+
+\lstset{ %
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\normalsize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=VHDL,                   % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=9pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=2,	                   % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+	\usepackage[pdftex]{graphicx}
+% declare the path(s) where your graphic files are
+	\graphicspath{{../../Figures/}}
+	\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+% or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+% will default to the driver specified in the system graphics.cfg if no
+% driver is specified.
+	\usepackage[dvips]{graphicx}
+% declare the path(s) where your graphic files are
+	\graphicspath{{../eps}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+	\DeclareGraphicsExtensions{.eps}
+\fi
+\usepackage[nolist]{acronym}
+
+\usepackage[outdir=./]{epstopdf}
+%\setcounter{secnumdepth}{0}
+\begin{document}
+\input{../Front/acronyms2}
+\title{Pattern-of-Life Modeling in Smart Homes}
+
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Steven M. Beyer, Barry E. Mullins, Scott R. Graham, and Jason M. Bindewald
+%		\IEEEauthorblockA{
+%		Air Force Institute of Technology\\
+%		Wright-Patterson AFB, OH 45433\\
+%		Email: \{steven.beyer, barry.mullins, scott.graham, jason.bindewald\}@afit.edu}
+}}
+%	\and
+%	\IEEEauthorblockN{Barry E. Mullins}
+%	\IEEEauthorblockA{
+%		Air Force Institute of Technology\\
+%		Wright-Patterson AFB, OH 45433\\
+%		Email: barry.mullins@afit.edu}
+%	\and
+%	\IEEEauthorblockN{Scott R. Graham}
+%	\IEEEauthorblockA{
+%		Air Force Institute of Technology\\
+%		Wright-Patterson AFB, OH 45433\\
+%		Email: scott.graham@afit.edu}
+%	\and
+%\IEEEauthorblockN{Jason M. Bindewald}
+%\IEEEauthorblockA{
+%	Air Force Institute of Technology\\
+%	Wright-Patterson AFB, OH 45433\\
+%	Email: jason.bindewald@afit.edu}	
+%}
+
+%\IEEEpubid{\makebox[\columnwidth]{Copyright (c) 2012 IEEE. Personal use of this material is permitted. However, permission to use this material \hfill} \hspace{\columnsep}\makebox[\columnwidth]{for any other purposes must be obtained from the IEEE by sending a request to pubs-permissions@ieee.org.}}
+
+
+\def\ps@IEEEtitlepagestyle{%
+\def\@oddfoot{\mycopyrightnotice}%
+\def\@evenfoot{}%
+}
+
+\def\mycopyrightnotice{\hfill \begin{minipage}{13cm}\footnotesize \centering
+2327-4662 \copyright \ 2018 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission. See http://www.ieee.org/publications\_standards/publications/rights/index.html for more information.\end{minipage}\hfill
+\gdef\mycopyrightnotice{}%
+}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+Smart home devices are relatively inexpensive, readily available, and easily integrated into homes. However, retailers provide smart home devices with little scrutiny in regards to device security or known vulnerabilities. This research presents a smart home architecture designed with commercially-available devices used to investigate \ac{IoT} data leakage in the wild. Additionally, a pattern-of-life analysis tool was developed to exhibit how an eavesdropper can use traffic from a smart home to classify devices, identify events, track users, and gain physical access to a home. The tool was evaluated through five-days of experimentation in which 17 of 18 devices were classified, 95\% of 343 events were identified, and users were tracked with near 100\% accuracy. This information, combined with a discovered Bluetooth Low Energy lock vulnerability, were used to gain unfettered access to the home while the user was away. Furthermore, a mitigation technique was created to introduce spoofed wireless traffic sent on behalf of devices within the  home to hinder an eavesdropper's ability to classify devices, identify events, and track users. During an additional five-day experiment, security devices were concealed, 221 false events were introduced per day, and the user appeared always home. Finally, this research provides security recommendations to manufacturers and users to help defend against vulnerabilities and create a safer smart home environment.  
+
+\begin{IEEEkeywords}
+Cyber-Physical Systems, Security and Privacy, Smart Environment, Test-bed and Trials
+\end{IEEEkeywords}
+
+\end{abstract}
+\acresetall
+\section{Introduction}
+Smart home devices have become one of the most popular categories in the \ac{IoT}, accounting for \$4.5 billion of a \$351 billion industry; over 40.8 million smart home devices are expected to ship in 2018, a 41 percent increase over 2017 \cite{consumerTech}. As smart home technologies become more popular and easier to obtain, the increased prevalence of \ac{IoT} devices in the home necessitates the need for investigation into what kind of privacy information these devices inadvertently broadcast, what vulnerabilities exist, and how privacy leakage can be used against consumers. More importantly, with the rise of vulnerable smart home devices available to consumers, defenses need to be researched and implemented.
+
+This work contributes to the field of \ac{IoT} security, specifically privacy within a smart home, by illustrating how data leakage, combined with device vulnerabilities, enables an eavesdropper to gain physical access to a home. Additionally, mitigation techniques are presented to provide users a method 
+
+\vspace*{-3\baselineskip}
+
+\begin{IEEEbiographynophoto}{}
+	Manuscript received March 23, 2018; revised May 1, 2018; accepted May 15, 2018. Date of publication XXXXX x, XXXX; date of current version XXXXX X, XXXX. (\textit{Corresponding author: Steven M. Beyer.})
+	
+	S. M. Beyer is with the Department of Electrical and Computer Engineering, United States Air Force Academy, USAFA, CO 80840 (e-mail: steven.beyer@usafa.edu).
+	
+	B. E. Mullins, S. R. Graham, and J. M. Bindewald are with the Department of Electrical and Computer Engineering, Air Force Institute of Technology, Wright-Patterson AFB, OH 45433 (e-mail: \{barry.mullins, scott.graham, jason.bindewald\}@afit.edu).
+	
+	Digital Object Identifier 
+\end{IEEEbiographynophoto}
+
+to defend against security threats introduced by data leakage. In doing so, we make five principal contributions:
+
+\textbf{Smart home architecture.} To analyze \ac{IoT} data leakage in the wild, a realistic \ac{SHAA} is provided that integrates Wi-Fi and \ac{BLE} \ac{COTS} devices with Apple's home automation application, HomeKit.
+
+\textbf{Vulnerability Analysis.} This work explains how an eavesdropper can use device vulnerabilities, characteristic data exchanges, and packet sizes to create a classifier able to identify components and events within the smart home environment.
+
+\textbf{\acf{CITIoT}.} It presents a tool that demonstrates four capabilities enabled by data leakage: network mapping, device classification, event identification, and user tracking.
+
+\textbf{\acf{MIoTL}}. A data leakage mitigation technique is developed that introduces spoofed wireless traffic sent on behalf of \ac{IoT} devices to inhibit \ac{CITIoT}'s ability to classify devices, identify events, and track users. 
+
+\textbf{Synthesis.} We stress the importance of smart home operational security by demonstrating how \ac{CITIoT} can be used to gain physical access to a smart home when a user is away.
+
+The rest of this paper is organized as follows: Section~\ref{background} discusses background and related research in the areas of Wi-Fi and \ac{BLE} security and \ac{IoT} device privacy. Section~\ref{smartHome} presents the smart home architecture used in creating and evaluating \ac{CITIoT}. Sections~\ref{classifier} and~\ref{citiot} describe the creation of the device classifier and how it is used by \ac{CITIoT} to classify devices, identify events, and track users. The mitigation technique and operation are described in Section~\ref{mitigation}, while \ac{CITIoT}'s accuracy on the smart home architecture with and without mitigation operating is reported in Section~\ref{results}. Finally, the implications of device data leakage are discussed and recommendations to manufacturers and users are presented in Section~\ref{synthesis} before the paper is concluded in Section~\ref{conclusion}.
+
+\figShaaDiagramIeee
+
+\section{Background and Related Research}\label{background}
+
+The 802.11 wireless specification defines the physical and link layers for communication in the 2.4 GHz radio band \cite{802.11}. It also provides security procedures to encrypt data within a wireless network. Even with encryption, however, Wi-Fi still transmits a subset of information in the clear within the \ac{MPDU} data frame such as source, destination, and wireless router \ac{MAC} addresses. Also, the time and size of each packet can be ascertained by the receiver wireless network card. While these values are necessary for communication at lower levels of the Wi-Fi protocol, researchers have taken advantage of values sent in the clear to eavesdrop privacy information about users. For example, researchers have used \ac{MAC} addresses and \ac{RSSI} values to create location tracking systems on campuses \cite{Zhou}, track crowds at mass events \cite{Bonne}, and in \ac{CRM} allowing commercial businesses to track stores visited by customers \cite{Atkinson}. Researchers in the United Kingdom were able to use \ac{FSize} and packet times to fingerprint applications used on mobile phones \cite{Atkinson}. One researcher was able to use raw Wi-Fi signals to activate alerts when a security camera observes motion \cite{Madrigal}. This research, however, did not look at other types of smart home devices, observe how an attacker may use this traffic, or provide methods of mitigation.
+
+The Bluetooth \ac{SIG} introduced \ac{BLE} in Bluetooth Core Specification v4.0 \cite{sig4.0}. \ac{BLE} is designed to minimize power, cost, and data rate; these goals are accomplished by limiting overhead at every level of the architecture and using simple communication protocols. The \ac{BLE} specification defines security procedures to encrypt the payload, generate private addresses, and provide authentication in its \ac{SM} \cite{sig4.2}. However, implementation of security is left up to designers and each additional security measure contributes to increased energy consumption \cite{rHeydon}. Poor \ac{SM} implementation has left these devices vulnerable to privacy leakage and security vulnerabilities. Researchers were able to take advantage of poorly implemented \ac{SM}s to crack 12 \ac{BLE} locks from up to a quarter mile away \cite{RoseLocks}.	Similarly, a lack of encryption enables unintended privacy leakage. For example, in recent studies focused on \ac{BLE} wearable fitness trackers, one group of researchers observed device address and connection information sent in the clear that enabled them to identify users based on activity level and gait \cite{Das}, while another group used device addresses and \ac{RSSI} information to track a user wearing a Fitbit Surge up to 1,000 meters away with greater than 80\% accuracy \cite{RoseTrack}. Privacy data was also used to create pattern-mining models able to track tourist attraction visits in Belgium to determine the best locations to put hotels \cite{Versichele}. 
+\figTrng
+
+Although Wi-Fi and \ac{BLE} smart home devices are becoming commonplace, the privacy leakage and security vulnerabilities of these devices is largely unexplored. In 2016, Ed Skoudis presented a voice-controlled and automated \ac{IoT} smart office architecture, J.A.R.V.I.S. \cite{Skoudis}. J.A.R.V.I.S. represents a way forward for smart homes by integrating Wi-Fi devices, Apple's Homekit, and automation, but Skoudis admits that security was an afterthought in developing the architecture. At the end of his presentation, Skoudis challenged developers to explore the security implications of the growing \ac{IoT} field. The \ac{SHAA} developed in this work is influenced by Skoudis' work, but extends on it by expanding on the number of devices, including \ac{BLE} devices, and integrating a privacy leakage mitigation method. This work also explores the privacy consequences of a smart home architecture such as J.A.R.V.I.S. by analyzing privacy leakage in \ac{BLE} and Wi-Fi devices.
+
+While research has been done in the realm of Wi-Fi and \ac{BLE} privacy leakage, little work has provided a broad review of privacy leakage from smart home devices in the wild or methods to secure smart homes from data leakage.
+
+\section{\acf{SHAA}}\label{smartHome}
+\ac{SHAA} was developed to provide real \ac{IoT} traffic for data leakage analysis. As depicted in Figure~\ref{fig:ShaaDiagramIeee}, \ac{SHAA} includes three controller components and various connected devices. The controllers include (i) a Raspberry Pi running the Homebridge server that emulates the iOS HomeKit \ac{API} and exposes supported devices to Apple's HomeKit, (ii) an iPhone 6+ running Apple's HomeKit and device applications, and (iii) an Apple TV Generation 2 acting as a smart home hub to allow access to HomeKit supported devices while the user is away from the smart home. The communication between controllers and devices can be observed in Figure~\ref{fig:ShaaDiagramIeee} and is described in the rest of this section.
+
+The Raspberry Pi 3 Model B with Raspbian Jessie Lite version 4.9 operating system is connected to the smart home network via the on-board 802.11 b/g/n 2.4 GHz wireless chip \cite{rasbperry}. The Raspberry Pi runs Homebridge version 0.4.14 as a system service and each interaction between a controller and device is logged in the service journal \cite{homebridge}. A Homebridge plug-in is utilized to enable communication between the Belkin devices in Table~\ref{tbl:WifiDevicesIeee} and Apple's HomeKit on the iPhone 6+ and Apple TV \cite{wemo}.
+
+The iPhone 6+ and Apple TV act as controllers in the smart home architecture and connect to devices via Wi-Fi and \ac{BLE}. When the user is home, the iPhone connects to Wi-Fi devices via the Homebridge server on the Raspberry Pi and connects directly to \ac{BLE} devices. Some of the \ac{BLE} devices are not supported by Apple's HomeKit and can only be accessed through the manufacturer-provided iOS application on the iPhone. When the user is away from the smart home, the iPhone can communicate with HomeKit supported devices using an \ac{ISP}. For example, if the user is away from home and wants to access the temperature in a room, the iPhone interfaces with the Apple TV via the iCloud and the Apple TV will communicate with the device in the home. This only works with HomeKit supported devices, therefore, \ac{BLE} devices b$ _6 $-b$ _{10} $ (see Table~\ref{tbl:BtleDevicesIeee}) cannot be accessed while the user is away from the home. 
+
+To facilitate Wi-Fi communication in the smart home architecture, a 2.4 GHz Wi-Fi \ac{AP}, with the \ac{SSID} set as ``Moria", was setup with \ac{WPA2} security on channel 1. Smart home devices w$ _2 $-w$ _9 $ are connected to the \ac{AP} and are listed in Table~\ref{tbl:WifiDevicesIeee}. The smart home devices include a camera, six outlets (four smart outlets, one mini outlet, and one energy outlet), and a motion sensor. These devices use the Homebridge server to communicate with Apple's HomeKit on the iPhone. 
+
+A Bluetooth master must be present for Bluetooth communication to occur in the smart home architecture. In \ac{SHAA}, the iPhone and Apple TV (devices b$_{11}$ and b$_{12}$) act as masters while each of the \ac{BLE} devices are slaves. A list of \ac{BLE} devices can be found in Table~\ref{tbl:BtleDevicesIeee}. Devices b$ _1 $-b$ _5$ are HomeKit supported and can be accessed with voice commands via the iPhone 6+ or Apple TV. Devices b$ _6$-b$ _{10} $ are not HomeKit supported and can only be accessed through their manufacturer-specific applications on the iPhone 6+.
+
+\section{Building the Classifier}\label{classifier}
+
+This section describes the process used to build a classifier that can identify Wi-Fi \ac{IoT} devices and events. To emulate the scenario in which the classifier operates, devices w$_2$-w$_9$ were activated over a 10-hour day within \ac{SHAA}.  Wireless packets were collected using an 802.11ac wireless adapter (Alfa card AWUS036ACH) in monitor mode and an open source sniffing tool (airodump-ng). The file captures were decrypted using the network passkey to allow analysis of traffic. These packets were then analyzed using a 4-tuple that includes packet arrival time, \ac{FSize}, and the unencrypted information sent within the \ac{MPDU} (source and destination \ac{MAC} addresses). A Python script provides a graphical representation of traffic within \ac{SHAA} to help determine trends and patterns in packet sizes for devices and events---an example of traffic sent from and to devices is provided in Figures~\ref{fig:TrngFromDeviceIeee} and~\ref{fig:TrngFromPiIeee}, respectively.
+
+\tableWifiDevicesIeee
+\tableBtleDevicesIeee
+
+For device identification, the 4-tuples were sorted by destination address (i.e., when a device receives packets from the Raspberry Pi). Traffic during the training period indicated clear criteria that was used to classify devices into one of three categories: outlet, sensor, or camera. Outlets receive packets with \ac{FSize} between 619 and 632 bytes when an event occurs, sensors receive packets with \ac{FSize} equal to 269 bytes when the Raspberry Pi subscribes to notifications from the device, and cameras receive packets with a \ac{FSize} of 281 bytes when the Raspberry Pi subscribes to notifications from the device. Therefore, the classifier identifies each device by these criteria and categorizes them accordingly.
+
+Event identification relies on successful device classification and begins after the first step is complete. For electrical outlets, the classifier utilizes the same 4-tuples sorted by destination address to identify when a user turns on or off the outlet. From traffic analysis, outlets are controlled using a HTTP POST command with a packet size of 620 bytes when encrypted. Each outlet event is identified via that criteria. Unlike outlets, however, sensors and cameras transmit information (e.g., camera snapshots or motion notifications) to the router in short bursts at the time of an event; a slightly different approach is used for these devices: each packet's 4-tuple is sorted by source address and the outgoing \ac{FSize} are aggregated in 1-minute segments. Camera events are identified by a combined \ac{FSize} greater than 100,000 bytes, while motion events occur between 10,000 and 100,000 bytes. Table~\ref{tbl:DeviceClassifier} summarizes the criterion used for device classification and event identification.
+
+\tableDeviceClassifier
+
+\section{\ac{CITIoT} Tool}\label{citiot}
+
+To illustrate the operation of CITIoT, we provide the following scenario: a user is in a smart home connected to a Wi-Fi \ac{AP} and interacts with various Wi-Fi and \ac{BLE} \ac{IoT} devices. In the morning, the user turns on lights, activates sensors while walking throughout the house, and eventually turns off the lights before leaving the house (the door is locked before leaving). While at work, the user checks on the temperature in the house or other devices (e.g., security cameras) remotely. After work, the user returns home, unlocks the front door, turns on lights, and activates sensors throughout the house. Before going to bed, the lights are turned off. During this period, an eavesdropper is outside the house sniffing wireless data packets attempting to infer information about the user, devices, and events within the house. The observation process is completely passive and, therefore, undetectable by the user. The eavesdropper has no access to  network credentials and is not part of the smart home network. 
+
+\ac{CITIoT} contributes four capabilities enabled by data leakage from smart home Wi-Fi and \ac{BLE} devices: device classification, event identification, user tracking, and network mapping. Figure~\ref{fig:CitiotDiagramIeee} depicts the \ac{CITIoT} system diagram which can be summarized by six components: (i) reconnaissance and scanning, (ii) passive sniffing, (iii) data preprocessing, (iv) tracking, (v) classification, and (vi) network mapping. Components i and ii require eavesdropper interaction, while components iii-vi are executed via Python scripts. The next sections provide a description of all components and their interactions.
+
+\subsection{Reconnaissance and Scanning}
+\figCitiotDiagramIeee
+Reconnaissance is necessary to ascertain five characteristics of the smart home network which \ac{CITIoT} requires for operation: \ac{AP} \ac{MAC} address, \ac{AP} channel, Wi-Fi device \ac{MAC} addresses, \ac{BLE} device names, and controller \ac{MAC} addresses. Prior to beginning reconnaissance, the wireless interface that corresponds to the Alfa card must be set to monitor mode to capture all Wi-Fi traffic regardless of the packet's \ac{BSSID} or \ac{DA}. The airodump-ng tool is used to scan for Wi-Fi devices and \ac{AP}s. This scan identifies the target and smart home information needed for passive sniffing: (i) the target device's \ac{MAC} address (e.g., iPhone 6+), (ii) associated \ac{AP} \ac{MAC} address, (iii) \ac{SSID} of the smart home, and (iv) \ac{AP} channel.
+
+Next, the eavesdropper scans for devices connected to the smart home network using the Alfa card and airodump-ng tool while filtering on the target \ac{AP} \ac{MAC} address found in the previous step. The list of device \ac{MAC} addresses associated with the target \ac{AP} is collected and device manufacturers are discovered using an \ac{OUI} lookup tool \cite{ouiLookup}. This information is used to infer which devices are \ac{IoT} devices (e.g., Belkin devices) and which are controllers (e.g., Raspberry Pi or Apple devices). 
+
+Similarly, a Bluetooth wireless adapter (Plugable USB 2.0) and sniffing tool (BlueZ \cite{Bluez}) are used to scan for \ac{BLE} devices. The Bluetooth service is started, the interface is activated, and scanning is initiated. The results show device names and \ac{MAC} addresses found from \texttt{ADV\_IND} and \texttt{SCAN\_RESP} packets collected using the low range Plugable Bluetooth adapter from within the smart home.
+
+\subsection{Passive Sniffing}
+
+Passive sniffing is used to capture Wi-Fi and \ac{BLE} traffic from the smart home. Sniffing occurs simultaneously for Wi-Fi and \ac{BLE} traffic using the Alfa card and three Ubertooth One sniffers (Firmware: 2017-03R2 \cite{Ubertooth}), respectively. Prior to capturing Wi-Fi traffic, the Alfa card's wireless interface must be in monitor mode to capture Wi-Fi packets destined to any device. The airodump-ng tool is then used to capture Wi-Fi traffic from the smart home. When operating the capture tool, the Alfa card's interface (``wlan1"), capture output file format (``.pcap"), target \ac{AP} \ac{MAC} address (``ec4f8273d11a"), and target \ac{AP} Wi-Fi channel (``1") options are set. Sniffing is initiated using \texttt{\#airodump-ng -c 1 wlan1 -o pcap -w wifi --bssid ec4f8273d11a}.
+
+To capture \ac{BLE} traffic, three Ubertooth One sniffers are set with each device (``U0"-``U2") tuned to one of three advertisement channels (``37"-``39"), to follow traffic (``f"), and output packets to a capture file (``.pcap"). A single Ubertooth One sniffer can be operated using \texttt{\#ubertooth-btle -f -U0 -A37 -qble.pcap}. When sniffing is complete, the captures are stored on the host in preparation for preprocessing.
+
+\subsection{Preprocessor}
+After passive sniffing is complete, the Wi-Fi packet captures are parsed and organized in preparation for the classifier. This is accomplished using Python 2.7.10 and Pyshark 0.3.7.8, a Python wrapper for parsing packets using Wireshark dissectors \cite{Pyshark}. The time, size, source, and destination for each 802.11 data packet are extracted from the captures, and the resulting 4-tuples are stored in \ac{CSV} files. All other 802.11 packet types and packets with a source or destination not in the list of Wi-Fi devices found during reconnaissance do not include information used by the classifier and are not saved. The 4-tuples are stored in two files per device per day: one file in which each 4-tuple has a source address of the device and one file in which each 4-tuple has a destination address of the device. For example, the Belkin Motion Sensor (w$ _{8}$) will have two files per day, one in which every 4-tuple represents a packet from the sensor to another device in the Wi-Fi device list and one file in which every 4-tuple represents a packet from a device in the list to the Belkin Motion Sensor. These \ac{CSV} files are used by the Wi-Fi classifier and network mapper components of \ac{CITIoT}.
+
+\subsection{\ac{MAC} Tracker}
+
+The \ac{MAC} tracker unit tracks when devices are in the smart home using Wi-Fi packets sent from that device. It operates at the same time as data preprocessing and utilizes every 802.11 packet that has a source \ac{MAC} address of a device in the Wi-Fi device list. As the packet capture is parsed, the tracker keeps a list of the first and last time a packet was sent from a device within the smart home. If the tracker observes no packets sent from a device for five minutes it marks the device as no longer in the smart home and records the arrival and departure times in a \ac{CSV} file. In testing, it was observed that inactive Apple devices stop sending packets to save battery power, but still send at least one packet per five minutes even when idle. Therefore, a five-minute interval was chosen as the appropriate amount of time to account for idle devices; this ensures that a lack of packets sent from a device occurs because the device is away from the home and not just idle. This time period is easily changed within the script and can be increased to provide more confidence that the device is away from the home or decreased to improve precision.
+
+\subsection{Device Classification}
+For Wi-Fi traffic, the classifier is operated via a Python script which utilizes each of the \ac{CSV} files created during data preprocessing and the criteria found during training to classify devices and identify events. First, for each device, the classifier analyzes traffic sent from the Raspberry Pi to that device to classify what kind of device it is (outlet, sensor, or camera). If the traffic meets one of the criteria found during training, then the device type is set accordingly, otherwise the type is unknown. Second, based on the device type determined in the first step, traffic is tested against the event criteria found during training to identify when an event occurs. For an outlet device, the traffic sent from the Raspberry Pi to the device is used to identify outlet events, while traffic sent from the device to the router is used to identify sensor and camera events. The type found for each device is stored in a \ac{CSV} file listing the \ac{MAC} address and type of device. The time, source, and destination for each event identified are also stored in a separate \ac{CSV} file.
+
+For \ac{BLE} traffic, the classifier parses the packet captures created during passive sniffing for \texttt{ADV\_IND}, \texttt{SCAN\_RESP}, and \texttt{CONNECT\_REQ} packets. The \texttt{ADV\_IND} and \texttt{SCAN\_RESP} packets provide advertisement information, such as device name, used by the classifier to classify devices. Instead of classifying devices into categories as in Wi-Fi, the classifier relies on the name provided within these packets. The discovered device name and \ac{BLE} \ac{MAC} addresses are stored in a \ac{CSV} file. Devices only exchange information after a \texttt{CONNECT\_REQ} packet, therefore, these packets are selected as the indicator for device events. The classifier searches for \texttt{CONNECT\_REQ} packets, uses the device name found during the first step, and stores the time, source, and destination for each event into a \ac{CSV} file. Only device events that match \ac{BLE} devices found in reconnaissance are stored. A single \ac{BLE} event may cause devices to send multiple \texttt{CONNECT\_REQ} packets that span a two-minute time period. This would cause \ac{CITIoT} to mark one event multiple times. Therefore, \ac{CITIoT} identifies one event per device per two-minutes (i.e., the \texttt{CONNECT\_REQ} packets sent within two-minutes of the first connection packet are ignored). This may cause the device to miss two events that occur within two minutes, but this event interval per device provides enough precision for the data leakage investigation.
+
+\figNetworkMapIeee
+
+\subsection{Network Mapper}
+The final component of \ac{CITIoT}, the network mapper, creates a graphical representation of how Wi-Fi devices are connected within the smart home using the \ac{FSize} of 802.11 data packets sent between devices. The network mapper operates as the classifier parses each \ac{CSV} file created by the preprocessor. The \ac{FSize} of all packets sent between two devices are combined and stored in a \ac{CSV} file along with the device names. For example, if the Raspberry Pi sends a total of three 500 byte packets to Switch1 then a 3-tuple is written to a \ac{CSV} that includes the Raspberry Pi and Switch1 as nodes and the cumulative number of bytes sent, 1500 bytes, as the edge between these two nodes. Figure~\ref{fig:NetworkMapIeee} provides a sample network map created by the script---nodes represent devices and edges depict the cumulative frame size sent between devices (i.e., thicker lines represent more data sent between devices).
+
+\section{Mitigation} \label{mitigation}
+
+The \ac{MIoTL} tool provides methods for mitigating data leakage from \ac{IoT} devices in smart homes. \ac{MIoTL} has two components which operate within \ac{SHAA} to negate capabilities provided by \ac{CITIoT} by sending fake \ac{IoT} traffic interspersed with real traffic. The first component, device shadow, spoofs \ac{IoT} device traffic to make it more difficult to classify devices and identify device events. The second component, MAC shadow, spoofs traffic sent by a user's device (e.g., iPhone) to make it difficult to track when the user is away. The tool operates on a Raspberry Pi 3B with the Kali 4.1.19 operating system. The Raspberry Pi was used because the tool is always running and the Pi provides low power consumption and constant connectivity on the network.
+
+\subsection{Device Shadow}
+The device shadow script was written with Python using the Scapy network tool to randomly spoof packets sent between devices in the smart home. Three different packet groups are randomly sent: (i) a packet of 620 bytes sent from the Raspberry Pi to every other device in a random order; (ii) a series of packets totaling 10,000 bytes sent from each device in a random order to the router; and (iii) a series of packets totaling 100,000 bytes sent from each device in a random order to the router. \ac{MIoTL} randomly sends one of these packet groups at a random interval between ten and fifteen minutes. The random order and interval are used to make it difficult to differentiate real traffic from spoofed traffic sent from the tool. Packets are sent to and from each device to make it difficult to identify devices. For example, per the device classification criteria used by \ac{CITIoT}, a packet of size 620 bytes sent from the Raspberry Pi to a device indicates that the device is an outlet. This mitigation component spoofs 620-byte packets sent from the Raspberry Pi to each device, regardless of type, so the classifier tool would incorrectly classify a sensor as an outlet. The same concept is used to spoof events.
+
+\subsection{MAC Shadow}
+The \ac{MAC} shadow script was written with Python using Scapy to spoof packets sent from a device to a controller. To accomplish this, the script first checks to see if the device  is on the smart home network every four minutes. If the device is not on the smart home network, the script sends ten spoofed packets on behalf of the device (e.g., iPhone 6+) to a controller device (e.g., Apple TV). The tool checks to see if the device is not on the network to ensure the device's entry in the router's \ac{ARP} table is not changed while the device is on the network and the user does not experience network degradation. The four minute interval was chosen as it sends packets often enough for it to appear that the device is on the network without sending too many packets to impact the performance of the wireless network.
+
+\section{Experimentation and Results}\label{results}
+The experiment presented in this section functions as an evaluation of the \ac{CITIoT} and \ac{MIoTL} tools in a realistic smart home environment, testing how accurately \ac{CITIoT} operates against \ac{SHAA}, and how well \ac{MIoTL} mitigates these attacks. Specifically, the experimentation attempts to accomplish four objectives measured using the associated metrics: (i) determine the ability of an eavesdropper to accurately classify smart home devices (\ac{DCSR}), (ii) examine the percentage of events successfully identified (\ac{EITPR} and \ac{EIFPR}), (iii) measure the capability to track when users are in the smart home (\ac{UTSR}), and (iv) evaluate processing time and storage requirements (processing time and hard drive space usage). While not directly measured, the effectiveness of \ac{MIoTL} is quantified via the observed decrease in \ac{CITIoT}'s accuracy when the mitigation tool is operating. These results provide consumers with an understanding of the potential impact of data leakage in smart home environments.
+
+Experimentation was accomplished over ten days. The Homebridge logger and \ac{CITIoT} sniffers were activated at the beginning of each trial. At least one minute was allowed between activating sniffers and the first event to permit the logger and sniffers time to normalize. For the first five trials, each device was activated twice in a random order in the morning and again in the evening. Also, devices were randomly activated throughout the day while the user was away. The time of each activation was recorded in a user log. At the end of the trial, \ac{CITIoT} sniffers and the Homebridge logger were deactivated and the preprocessor and \ac{MAC} track units of \ac{CITIoT} were started. After these components were finished operating, the classifier and network mapper units were activated. The timing measurement was built into \ac{CITIoT} using Python's time module to provide the wall-clock time used to calculate processing time. Results are stored for statistical analysis and evaluation.
+
+The testing process was repeated in trials 6-10 with the \ac{MIoTL} tool operating. \ac{MIoTL} only creates Wi-Fi traffic to impede with \ac{CITIoT}'s operation, therefore, only Wi-Fi devices were activated. The \ac{MIoTL} tool was initiated at least five minutes prior to the loggers and sniffers to allow for normalization. Wi-Fi devices were activated and the user log was maintained as in the first trials. At the end of the trial, the \ac{CITIoT} Wi-Fi sniffer, the Homebridge logger, and \ac{MIoTL} were deactivated. \ac{CITIoT} operated similarly to previous trials after that. Findings are summarized in Table~\ref{tbl:TotalResultsIEEE} and the rest of this section.
+
+\tableTotalResultsIEEE
+
+Device classification was 94.4\% successful with all 8 Wi-Fi devices and 9 out of 12 \ac{BLE} devices categorized each day. On average, \ac{CITIoT} was able to identify 95.0\% of the 343 events (true positives) that occurred within the smart home with a standard deviation of 4\% across five trials. The tool only identified an average of 3 events per day that did not actually occur (false positives). This low false positive rate provides confidence in \ac{CITIoT}'s ability to accurately identify events. The tool was also 99.7\% successful in determining if the user was away from the home. 
+
+When the \ac{MIoTL} tool was operating, however, \ac{CITIoT} was much less accurate. All of the Wi-Fi devices were categorized as outlets which concealed the motion sensor and security camera. An average of 79.8\% events were successfully identified, but \ac{MIoTL} caused \ac{CITIoT} to falsely identify an average of 221 events per day that did not occur. This high false positive rate resulted in a lack of confidence that \ac{CITIoT} could accurately identify events during mitigation. Additionally, the tool only recognized 7.5 minutes of 24 hours that the user was away from the home when \ac{MIoTL} was operating. 
+
+Two one-tailed, two sample $t$-tests were accomplished to demonstrate the significance of \ac{MIoTL}'s impact on \ac{CITIoT}'s operation. Using an alpha level of 0.05, the results showed that mitigation had a statistically-significant impact on \ac{CITIoT}'s ability to identify true positives ($p = 0.001426 < \alpha$) and ignore false positives  ($p = 4.675 x 10^{-13} < \alpha$)---\ac{MIoTL} decreased the rate at which \ac{CITIoT} identified true positives and increased the rate at which the tool identified false positives.
+
+A total of 11.2 GB, 63.2 million packets, and 94.8 hours of traffic was captured during the 10 experimentation trials. At an average rate of 860,000 packets captured per hour, \ac{CITIoT} was able to process one hour's worth of captured traffic in about 8 minutes. \ac{CITIoT} used a mean 7 MB of storage per 25,000 packets captured and, therefore, a one-hour traffic capture took about 240 MB of hard drive space.
+
+\section{Synthesis}\label{synthesis}
+
+\subsection{Physical Security Impact}
+
+Using \ac{CITIoT}'s output from experimentation a few observations can be made about the user and smart home that have significant security implications: (i) the user was away from the home between 0800-1100 four days out of the week, (ii) the user used a \ac{BLE} lock to secure their home, and (iii) the user employed a Wi-Fi based security camera and motion sensor in the home. It was also observed that communication between the iPhone and \ac{BLE} lock was not encrypted and passwords were sent in the clear. Using the sniffed passwords, the times when the user was away from the home, and a replay attack, the door was unlocked by the eavesdropper at will. Additionally, the lock's passwords can be changed locking the user out of the home. The eavesdropper is also aware of a Wi-Fi camera and motion sensor within the home. Furthermore, multiple Raspberry Pi devices could be deployed with \ac{CITIoT} running on each to collect data simultaneously from numerous smart homes, something not possible with conventional reconnaissance methods. If \ac{MIoTL} was operating in the smart home, however, the eavesdropper would not have been able to track when the user was away nor be aware of the existence of the Wi-Fi security camera and motion sensor. 
+
+\subsection{Recommendations to Manufacturers and Users}
+Many of the vulnerabilities used in this work take advantage of information that is not encrypted at the lower levels of the Wi-Fi and \ac{BLE} protocols. Therefore, to create more secure smart home devices, developers must consider security from the physical layer up. For Wi-Fi, this includes periodically changing \ac{MAC} addresses, randomizing \ac{FSize} of event packets, and encrypting lower-layer data packets. In \ac{BLE}, devices need to make their advertisements private. Also, common operational security methods can help prevent against smart home device attacks. For example, users should be aware that routine schedules leave them vulnerable to pattern-of-life modeling---a threat which is increased by smart devices. Maintaining unpredictable schedules will help prevent these types of attacks. Similarly, turning on or off lights while away from home can trick an eavesdropper into thinking someone is home. It is also important to have situational awareness of potential eavesdroppers or suspicious devices around when accessing smart locks or other devices.
+
+\subsection{Vulnerability Drivers}
+
+While the recommendations in the previous section can improve the security of smart home environments, none of these ideas are new. Why, then, have these fixes not been implemented to secure against privacy leakage? Rapid growth of the \ac{IoT} market, efforts to limit power, rapid device development, and other design constraints drive developers toward poor security implementation, leaving devices vulnerable. Also, while the areas of network and computer security have seen more adversarial pressure, the smart home is relatively new. Until recently, outlets, locks, and light bulbs were not connected to networks. This is the same evolution of vehicles as they become connected to the Internet and, therefore, open to attack. The privacy implications demonstrated in this work, however, require that developers of \ac{IoT} technologies consider security in design and engage with the computer security community to create more secure smart homes.
+
+\subsection{Limitations and Future Work}
+
+Limitations exist that can enable consumers to mitigate some of the attacks presented in this work. For example, the \ac{BLE} lock attack relies on poor \ac{SM} implementation than can be mitigated with software updates. Similarly, if a consumer does thorough research into device security and makes purchases from reputable manufacturers, vulnerabilities are less likely to exist. Also, only a limited selection of Wi-Fi devices were used in training the classifier in \ac{CITIoT} and only one smart home architecture was tested. If a smart home designer integrated different controllers and devices into the smart home it would further degrade CITIoT's capabilities as it is not trained for those environments or devices. For future work, an analysis of more devices and architectures should be carried out to examine if similar fingerprinting methods can be used and vulnerabilities exist in other devices. Also, other tools can be added to CITIoT, such as location tracking, to further stress the security implications of smart home devices. Additionally, mitigation can be expanded to include \ac{BLE} devices. Lastly, machine learning may be able to assist in training the classifier more efficiently and accurately.
+
+\section{Conclusion}\label{conclusion}
+As the modern home gets smarter it also becomes more vulnerable to attacks that were reserved to computers and networks. \ac{IoT} devices constantly communicate data that enable an eavesdropper to infer information about people and devices within a smart home. Users must be aware of what their devices are advertising and how this information can be used against them. This work informs the consumer by presenting a real-world smart home architecture and demonstrating how an eavesdropper can use CITIoT to learn the types of \ac{IoT} devices within the home, how they are networked, when events occur in the house, and when someone leaves. We show how this information can point an attacker to a vulnerable device such as a \ac{BLE} lock, inform when the users will not be home, and identify what kind of security devices are in the home. We provide a mitigation technique, that can mitigate some of these findings and help secure smart homes by concealing devices and making it appear users are always home. After presenting the security implications of smart homes, we recommended ways manufacturers and users can defend against these vulnerabilities and how future work can expand on these findings to create a more secure smart home.
+
+\bibliographystyle{../Back/ieeetran}
+\bibliography{../Back/myReferences} 
+
+\end{document}

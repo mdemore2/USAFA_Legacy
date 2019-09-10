@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Apr 17 13:48:54 2018
+# Process ID: 5652
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1468 C:\Users\C19Mark.Demore\Documents\Demore_ECE383\Final Project\code\fpgaKaraoke\fpgaKaraoke.xpr
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/vivado.log
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Final Project/code/fpgaKaraoke/fpgaKaraoke.xpr}
+update_compile_order -fileset sources_1

@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Feb 21 10:56:33 2018
+# Process ID: 6952
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.runs/design_1_microblaze_0_axi_intc_2_synth_1
+# Command line: vivado.exe -log design_1_microblaze_0_axi_intc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_0_axi_intc_2.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.runs/design_1_microblaze_0_axi_intc_2_synth_1/design_1_microblaze_0_axi_intc_2.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.runs/design_1_microblaze_0_axi_intc_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_microblaze_0_axi_intc_2.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 349.289 ; gain = 95.160
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_2' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_2/synth/design_1_microblaze_0_axi_intc_2.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'axi_intc' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cf04/hdl/axi_intc_v4_1_vh_rfs.vhd:3769]
+INFO: [Synth 8-638] synthesizing module 'intc_core' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cf04/hdl/axi_intc_v4_1_vh_rfs.vhd:782]
+INFO: [Synth 8-638] synthesizing module 'shared_ram_ivar' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cf04/hdl/axi_intc_v4_1_vh_rfs.vhd:321]
+INFO: [Synth 8-256] done synthesizing module 'shared_ram_ivar' (1#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cf04/hdl/axi_intc_v4_1_vh_rfs.vhd:321]
+INFO: [Synth 8-256] done synthesizing module 'intc_core' (2#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cf04/hdl/axi_intc_v4_1_vh_rfs.vhd:782]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_intc' (7#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/cf04/hdl/axi_intc_v4_1_vh_rfs.vhd:3769]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_intc_2' (8#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_2/synth/design_1_microblaze_0_axi_intc_2.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 393.313 ; gain = 139.184
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 393.313 ; gain = 139.184
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 754.895 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 754.895 ; gain = 500.766
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                                                                     | Inference      | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|U0          | INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32   | 
++------------+--------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |    16|
+|3     |LUT3     |    49|
+|4     |LUT4     |    31|
+|5     |LUT5     |    15|
+|6     |LUT6     |    30|
+|7     |RAM16X1D |    32|
+|8     |FDRE     |   180|
+|9     |FDSE     |     1|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 754.895 ; gain = 500.766
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:33 . Memory (MB): peak = 754.895 ; gain = 508.156

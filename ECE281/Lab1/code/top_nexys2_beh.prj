@@ -1,0 +1,2 @@
+vhdl work "sevenSegDecoder.vhd"
+vhdl work "top_nexys2.vhd"

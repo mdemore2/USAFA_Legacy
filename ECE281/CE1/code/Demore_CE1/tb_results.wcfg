@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/C19Mark.Demore/Documents/ECE281_Repo/CE1/Demore_CE1/Demore_CE1_top_Demore_CE1_top_sch_tb_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="demore_ce1_top_demore_ce1_top_sch_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/demore_ce1_top_demore_ce1_top_sch_tb/sw7" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw7</obj_property>
+      <obj_property name="ObjectShortName">sw7</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demore_ce1_top_demore_ce1_top_sch_tb/sw6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw6</obj_property>
+      <obj_property name="ObjectShortName">sw6</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demore_ce1_top_demore_ce1_top_sch_tb/sw5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw5</obj_property>
+      <obj_property name="ObjectShortName">sw5</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demore_ce1_top_demore_ce1_top_sch_tb/led0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led0</obj_property>
+      <obj_property name="ObjectShortName">led0</obj_property>
+   </wvobject>
+</wave_config>

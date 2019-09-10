@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Lab2_datapath_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Lab2_datapath_tb" />
+            <top_module name="glbl" />
+            <top_module name="lab2parts" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2001000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1001000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="163"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/Lab2_datapath_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/ac_adc_sdata" type="logic">
+      <obj_property name="ElementShortName">ac_adc_sdata</obj_property>
+      <obj_property name="ObjectShortName">ac_adc_sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/BIT_CLK" type="logic">
+      <obj_property name="ElementShortName">BIT_CLK</obj_property>
+      <obj_property name="ObjectShortName">BIT_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/cw" type="array">
+      <obj_property name="ElementShortName">cw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cw[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/btn" type="array">
+      <obj_property name="ElementShortName">btn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/exWrAddr" type="array">
+      <obj_property name="ElementShortName">exWrAddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">exWrAddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/exWen" type="logic">
+      <obj_property name="ElementShortName">exWen</obj_property>
+      <obj_property name="ObjectShortName">exWen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/exSel" type="logic">
+      <obj_property name="ElementShortName">exSel</obj_property>
+      <obj_property name="ObjectShortName">exSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/exLbus" type="array">
+      <obj_property name="ElementShortName">exLbus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">exLbus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/exRbus" type="array">
+      <obj_property name="ElementShortName">exRbus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">exRbus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/flagClear" type="array">
+      <obj_property name="ElementShortName">flagClear[7:0]</obj_property>
+      <obj_property name="ObjectShortName">flagClear[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/ac_mclk" type="logic">
+      <obj_property name="ElementShortName">ac_mclk</obj_property>
+      <obj_property name="ObjectShortName">ac_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/ac_dac_sdata" type="logic">
+      <obj_property name="ElementShortName">ac_dac_sdata</obj_property>
+      <obj_property name="ObjectShortName">ac_dac_sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/ac_bclk" type="logic">
+      <obj_property name="ElementShortName">ac_bclk</obj_property>
+      <obj_property name="ObjectShortName">ac_bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/ac_lrclk" type="logic">
+      <obj_property name="ElementShortName">ac_lrclk</obj_property>
+      <obj_property name="ObjectShortName">ac_lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/uut/readOutput" type="array">
+      <obj_property name="ElementShortName">readOutput[17:0]</obj_property>
+      <obj_property name="ObjectShortName">readOutput[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/uut/writeInput" type="array">
+      <obj_property name="ElementShortName">writeInput[17:0]</obj_property>
+      <obj_property name="ObjectShortName">writeInput[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/uut/vecAddrRead" type="array">
+      <obj_property name="ElementShortName">vecAddrRead[9:0]</obj_property>
+      <obj_property name="ObjectShortName">vecAddrRead[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/uut/vecAddrWrite" type="array">
+      <obj_property name="ElementShortName">vecAddrWrite[9:0]</obj_property>
+      <obj_property name="ObjectShortName">vecAddrWrite[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/tmds" type="array">
+      <obj_property name="ElementShortName">tmds[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmds[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/tmdsb" type="array">
+      <obj_property name="ElementShortName">tmdsb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmdsb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/Lbus_out" type="array">
+      <obj_property name="ElementShortName">Lbus_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Lbus_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/Rbus_out" type="array">
+      <obj_property name="ElementShortName">Rbus_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Rbus_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/flagQ" type="array">
+      <obj_property name="ElementShortName">flagQ[7:0]</obj_property>
+      <obj_property name="ObjectShortName">flagQ[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab2_datapath_tb/BIT_CLK_period" type="other">
+      <obj_property name="ElementShortName">BIT_CLK_period</obj_property>
+      <obj_property name="ObjectShortName">BIT_CLK_period</obj_property>
+   </wvobject>
+</wave_config>

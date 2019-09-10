@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xbip_utils_v3_0_8 -L dft_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dft_0 xil_defaultlib.dft_0 xil_defaultlib.glbl -log elaborate.log

@@ -1,0 +1,17 @@
+0.6
+2017.3
+Oct  4 2017
+20:11:37
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sim_1/new/lab4_tb.vhd,1523308096,vhdl,,,,lab4_tb,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/imports/code/Audio_Codec_Wrapper.vhd,1517939158,vhdl,,,,audio_codec_wrapper,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/imports/code/TWICtl.vhd,1517939183,vhdl,,,,twictl;twiutils,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/imports/code/audio_init.v,1517939175,verilog,,,,audio_init,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/imports/code/i2s_ctl.vhd,1517939168,vhdl,,,,i2s_ctl,,,,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,1522943621,verilog,,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/imports/code/audio_init.v,,clk_wiz_1,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v,1522943620,verilog,,C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,,clk_wiz_1_clk_wiz,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_1,,,,,
+<<<<<<< HEAD
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/new/lab4.vhd,1523308160,vhdl,,,,lab4,,,,,,,,
+=======
+C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Labs/Lab 4/code/lab4/lab4.srcs/sources_1/new/lab4.vhd,1523291829,vhdl,,,,lab4,,,,,,,,
+>>>>>>> master

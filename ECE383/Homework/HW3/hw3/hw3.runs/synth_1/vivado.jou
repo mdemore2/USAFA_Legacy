@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Jan 11 11:21:44 2018
+# Process ID: 9224
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW3/hw3/hw3.runs/synth_1
+# Command line: vivado.exe -log hw3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw3.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW3/hw3/hw3.runs/synth_1/hw3.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW3/hw3/hw3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source hw3.tcl -notrace

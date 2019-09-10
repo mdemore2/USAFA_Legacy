@@ -1,0 +1,2 @@
+vhdl isim_temp "MooreElevatorController_Shell.vhd"
+vhdl isim_temp "Moore_tb.vhd"

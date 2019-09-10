@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Feb 28 13:52:30 2018
+# Process ID: 9908
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.runs/design_1_my_counter_ip_0_1_synth_1
+# Command line: vivado.exe -log design_1_my_counter_ip_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_my_counter_ip_0_1.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.runs/design_1_my_counter_ip_0_1_synth_1/design_1_my_counter_ip_0_1.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.runs/design_1_my_counter_ip_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_my_counter_ip_0_1.tcl -notrace
+Command: synth_design -top design_1_my_counter_ip_0_1 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6288 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 350.688 ; gain = 95.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_my_counter_ip_0_1' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ip/design_1_my_counter_ip_0_1/synth/design_1_my_counter_ip_0_1.vhd:84]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'my_counter_ip_v2_0' declared at 'c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0.vhd:5' bound to instance 'U0' of component 'my_counter_ip_v2_0' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ip/design_1_my_counter_ip_0_1/synth/design_1_my_counter_ip_0_1.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'my_counter_ip_v2_0' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0.vhd:51]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'my_counter_ip_v2_0_S00_AXI' declared at 'c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:5' bound to instance 'my_counter_ip_v2_0_S00_AXI_inst' of component 'my_counter_ip_v2_0_S00_AXI' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'my_counter_ip_v2_0_S00_AXI' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:293]
+INFO: [Synth 8-226] default block is never used [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:675]
+WARNING: [Synth 8-614] signal 'Q' is read in the process but is not in the sensitivity list [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:670]
+WARNING: [Synth 8-614] signal 'flagQ' is read in the process but is not in the sensitivity list [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:670]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lec10' declared at 'c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/src/lec18.vhdl:25' bound to instance 'counter' of component 'lec10' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:765]
+INFO: [Synth 8-638] synthesizing module 'lec10' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/src/lec18.vhdl:35]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lec10' (1#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/src/lec18.vhdl:35]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:260]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'my_counter_ip_v2_0_S00_AXI' (2#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0_S00_AXI.vhd:87]
+WARNING: [Synth 8-3848] Net roll in module/entity my_counter_ip_v2_0 does not have driver. [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'my_counter_ip_v2_0' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ipshared/1521/hdl/my_counter_ip_v2_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_my_counter_ip_0_1' (4#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ip/design_1_my_counter_ip_0_1/synth/design_1_my_counter_ip_0_1.vhd:84]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0 has unconnected port roll
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 395.707 ; gain = 140.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 395.707 ; gain = 140.129
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.288 . Memory (MB): peak = 751.098 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "roll" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 31    
+	  32 Input     32 Bit        Muxes := 31    
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lec10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_counter_ip_v2_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 31    
+	  32 Input     32 Bit        Muxes := 31    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "roll" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design my_counter_ip_v2_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design design_1_my_counter_ip_0_1 has unconnected port roll
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/my_counter_ip_v2_0_S00_AXI_inst /aw_en_reg)
+INFO: [Synth 8-3886] merging instance 'U0/my_counter_ip_v2_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/my_counter_ip_v2_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/my_counter_ip_v2_0_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/my_counter_ip_v2_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/my_counter_ip_v2_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/my_counter_ip_v2_0_S00_AXI_inst /\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (aw_en_reg) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[31]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[30]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[29]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[28]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[27]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[26]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[25]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[24]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[23]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[22]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[21]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[20]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[19]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[18]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[17]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[16]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[15]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[14]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[13]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[12]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[11]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[10]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[9]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (slv_reg0_reg[8]) is unused and will be removed from module my_counter_ip_v2_0_S00_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:38 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:38 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |     2|
+|3     |LUT3  |     4|
+|4     |LUT4  |    26|
+|5     |LUT5  |    16|
+|6     |LUT6  |   383|
+|7     |MUXF7 |   128|
+|8     |FDRE  |  1019|
+|9     |FDSE  |     7|
++------+------+------+
+
+Report Instance Areas: 
++------+------------------------------------+---------------------------+------+
+|      |Instance                            |Module                     |Cells |
++------+------------------------------------+---------------------------+------+
+|1     |top                                 |                           |  1586|
+|2     |  U0                                |my_counter_ip_v2_0         |  1586|
+|3     |    my_counter_ip_v2_0_S00_AXI_inst |my_counter_ip_v2_0_S00_AXI |  1584|
+|4     |      counter                       |lec10                      |    47|
++------+------------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:21 . Memory (MB): peak = 751.098 ; gain = 140.129
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 751.098 ; gain = 495.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_my_counter_ip_0_1' is not ideal for floorplanning, since the cellview 'my_counter_ip_v2_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:45 . Memory (MB): peak = 751.098 ; gain = 503.910
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.runs/design_1_my_counter_ip_0_1_synth_1/design_1_my_counter_ip_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.srcs/sources_1/bd/design_1/ip/design_1_my_counter_ip_0_1/design_1_my_counter_ip_0_1.xci
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW11/hw11/hw11.runs/design_1_my_counter_ip_0_1_synth_1/design_1_my_counter_ip_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_my_counter_ip_0_1_utilization_synth.rpt -pb design_1_my_counter_ip_0_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 751.098 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 28 13:54:31 2018...

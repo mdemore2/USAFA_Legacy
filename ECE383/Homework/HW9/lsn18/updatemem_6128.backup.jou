@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# 
+# Start of session at: Mon Feb 26 10:53:16 2018
+# Process ID: 6128
+# Current directory: c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2017.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2017.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/updatemem.log
+# Journal file: c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2017.3/scripts/updatemem/main.tcl -notrace

@@ -1,0 +1,2 @@
+vhdl work "mips_combo.vhd"
+vhdl work "mips_combo_tb.vhd"

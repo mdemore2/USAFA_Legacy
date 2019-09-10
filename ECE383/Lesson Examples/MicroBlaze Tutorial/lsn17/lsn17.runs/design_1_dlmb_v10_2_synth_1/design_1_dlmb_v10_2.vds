@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Feb 21 11:11:23 2018
+# Process ID: 7784
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.runs/design_1_dlmb_v10_2_synth_1
+# Command line: vivado.exe -log design_1_dlmb_v10_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_v10_2.tcl
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.runs/design_1_dlmb_v10_2_synth_1/design_1_dlmb_v10_2.vds
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.runs/design_1_dlmb_v10_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_dlmb_v10_2.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 350.109 ; gain = 95.918
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_2' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/synth/design_1_dlmb_v10_2.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'FDS' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'FDS' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (2#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_2' (3#1) [c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Lesson Examples/lsn17/lsn17.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/synth/design_1_dlmb_v10_2.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 391.750 ; gain = 137.559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 391.750 ; gain = 137.559
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 658.844 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 658.844 ; gain = 404.652
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 658.844 ; gain = 404.652
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 658.844 ; gain = 404.652
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 658.844 ; gain = 404.652
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 658.844 ; gain = 404.652
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 681.652 ; gain = 427.461
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 681.652 ; gain = 427.461
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 691.797 ; gain = 437.605
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDS  |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 691.797 ; gain = 437.605
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:33 . Memory (MB): peak = 710.020 ; gain = 463.531

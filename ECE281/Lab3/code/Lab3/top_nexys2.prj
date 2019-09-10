@@ -1,0 +1,7 @@
+vhdl work "thunderbird_fsm.vhd"
+vhdl work "TDM4.vhd"
+vhdl work "synchronizer.vhd"
+vhdl work "sevenSegDecoder.vhd"
+vhdl work "clock_divder.vhd"
+vhdl work "additionalElevatorController.vhd"
+vhdl work "top_nexys2.vhd"

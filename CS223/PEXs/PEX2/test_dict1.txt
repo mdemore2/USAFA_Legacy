@@ -1,0 +1,8 @@
+CAB
+CAD
+CAR
+CAT
+COP
+COT
+COW
+CUT

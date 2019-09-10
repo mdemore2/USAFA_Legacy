@@ -1,0 +1,13 @@
+NET "i_clk_50MHz" LOC = B8;
+
+NET "o_led<0>" LOC = "J14";
+NET "o_led<1>" LOC = "J15";
+NET "o_led<2>" LOC = "K15";
+NET "o_led<3>" LOC = "K14";
+NET "o_led<4>" LOC = "E17";
+NET "o_led<5>" LOC = "P15";
+
+NET "i_sw<0>" LOC = "G18";
+NET "i_sw<1>" LOC = "H18";
+NET "i_sw<2>" LOC = "K18";
+NET "i_sw<3>" LOC = "K17";

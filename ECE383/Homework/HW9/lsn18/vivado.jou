@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Feb 26 09:45:03 2018
+# Process ID: 1284
+# Current directory: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8428 C:\Users\C19Mark.Demore\Documents\Demore_ECE383\Homework\HW9\lsn18\lsn18.xpr
+# Log file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/vivado.log
+# Journal file: C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/lsn18/lsn18.xpr
+update_compile_order -fileset sources_1
+save_project_as hw10 C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10 -force
+ipx::edit_ip_in_project -upgrade true -name My_Counter_IP_v1_0_project -directory C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.tmp/My_Counter_IP_v1_0_project c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/ip_repo/My_Counter_IP_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/ip_repo/My_Counter_IP_1.0
+ipx::edit_ip_in_project -upgrade true -name My_Counter_IP_v1_0_project -directory C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.tmp/My_Counter_IP_v1_0_project c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/ip_repo/My_Counter_IP_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+open_bd_design {C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv af.edu:user:My_Counter_IP:1.0 [get_ips  design_1_My_Counter_IP_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_My_Counter_IP_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_My_Counter_IP_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 design_1_My_Counter_IP_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.ip_user_files -ipstatic_source_dir C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/modelsim} {questa=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/questa} {riviera=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/riviera} {activehdl=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+validate_bd_design -force
+save_bd_design
+make_wrapper -files [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+reset_run design_1_My_Counter_IP_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_My_Counter_IP_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name My_Counter_IP_v1_0_project -directory C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.tmp/My_Counter_IP_v1_0_project c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/ip_repo/My_Counter_IP_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW9/ip_repo/My_Counter_IP_1.0
+upgrade_ip -vlnv af.edu:user:My_Counter_IP:1.0 [get_ips  design_1_My_Counter_IP_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_My_Counter_IP_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_My_Counter_IP_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 design_1_My_Counter_IP_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.ip_user_files -ipstatic_source_dir C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/modelsim} {questa=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/questa} {riviera=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/riviera} {activehdl=C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+make_wrapper -files [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.runs/impl_1/design_1_wrapper.sysdef C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk -hwspec C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk -hwspec C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk -hwspec C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper.hdf
+file mkdir C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk
+file copy -force C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.runs/impl_1/design_1_wrapper.sysdef C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk -hwspec C:/Users/C19Mark.Demore/Documents/Demore_ECE383/Homework/HW10/hw10/hw10.sdk/design_1_wrapper.hdf

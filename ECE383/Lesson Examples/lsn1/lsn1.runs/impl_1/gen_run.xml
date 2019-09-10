@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1515175919">
+  <File Type="ROUTE-PWR" Name="majority_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="majority.tcl"/>
+  <File Type="PWROPT-DCP" Name="majority_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="majority_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="majority_reports.tcl"/>
+  <File Type="BG-DRC" Name="majority.drc"/>
+  <File Type="OPT-HWDEF" Name="majority.hwdef"/>
+  <File Type="OPT-DCP" Name="majority_opt.dcp"/>
+  <File Type="OPT-DRC" Name="majority_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="majority_placed.dcp"/>
+  <File Type="PLACE-IO" Name="majority_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="majority_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="majority_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="majority_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="majority_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="majority_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="majority_physopt.dcp"/>
+  <File Type="BG-BIT" Name="majority.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="majority_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="majority_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="majority_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="majority_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="majority_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="majority_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="majority.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="majority_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="majority.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="majority_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="majority.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="majority_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="majority.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="majority_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="majority_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="majority_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="majority_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="majority_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="majority_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="majority_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="majority.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="majority_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="majority_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="majority.nky"/>
+  <File Type="BITSTR-BMM" Name="majority_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="majority.mmi"/>
+  <File Type="BITSTR-LTX" Name="majority.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="majority.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/LSN1/lec01.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/LSN1/lec01.vhdl"/>
+        <Attr Name="ImportTime" Val="1515173725"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="majority"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/LSN1/lec01.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/LSN1/lec01.xdc"/>
+        <Attr Name="ImportTime" Val="1515173740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

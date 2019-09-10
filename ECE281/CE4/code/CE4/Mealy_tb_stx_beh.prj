@@ -1,0 +1,2 @@
+vhdl isim_temp "MealyElevatorController_Shell.vhd"
+vhdl isim_temp "Mealy_tb.vhd"

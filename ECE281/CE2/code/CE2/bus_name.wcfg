@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/C19Mark.Demore/Documents/ECE281_Repo/CE2/code/CE2/halfAdder_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="halfadder_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="vbus5" type="vbus" db_ref_id="1">
+      <obj_property name="label">Input</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/halfadder_tb/i_sw1" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">i_sw1</obj_property>
+         <obj_property name="ObjectShortName">i_sw1</obj_property>
+         <obj_property name="label">i_sw1 (A)</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/halfadder_tb/i_sw0" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">i_sw0</obj_property>
+         <obj_property name="ObjectShortName">i_sw0</obj_property>
+         <obj_property name="label">i_sw0 (B)</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus6" type="vbus" db_ref_id="1">
+      <obj_property name="label">Output</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/halfadder_tb/o_led1" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">o_led1</obj_property>
+         <obj_property name="ObjectShortName">o_led1</obj_property>
+         <obj_property name="label">o_led1 (Carry)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/halfadder_tb/o_led0" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">o_led0</obj_property>
+         <obj_property name="ObjectShortName">o_led0</obj_property>
+         <obj_property name="label">o_led0 (Sum)</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

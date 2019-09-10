@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1523291899">
+  <File Type="ROUTE-PWR" Name="lab4_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lab4.tcl"/>
+  <File Type="PWROPT-DCP" Name="lab4_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="lab4_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lab4_reports.tcl"/>
+  <File Type="BG-DRC" Name="lab4.drc"/>
+<<<<<<< HEAD
+=======
+  <File Type="OPT-HWDEF" Name="lab4.hwdef"/>
+>>>>>>> master
+  <File Type="OPT-DCP" Name="lab4_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="lab4.hwdef"/>
+  <File Type="OPT-DRC" Name="lab4_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="lab4_placed.dcp"/>
+  <File Type="PLACE-IO" Name="lab4_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lab4_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lab4_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="lab4_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lab4_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lab4_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="lab4_physopt.dcp"/>
+  <File Type="BG-BIT" Name="lab4.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lab4_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="lab4_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lab4_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="lab4_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lab4_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="lab4_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="lab4.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab4_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="lab4.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab4_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="lab4.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab4_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="lab4.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="lab4_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lab4_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lab4_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lab4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lab4_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lab4_timing_summary_routed.rpx"/>
+<<<<<<< HEAD
+  <File Type="RDI-RDI" Name="lab4.vdi"/>
+=======
+>>>>>>> master
+  <File Type="ROUTE-CLK" Name="lab4_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="lab4.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lab4_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lab4_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="lab4.nky"/>
+  <File Type="BITSTR-BMM" Name="lab4_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="lab4.mmi"/>
+  <File Type="BITSTR-LTX" Name="lab4.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="lab4.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/code/audio_init.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab 2/code/audio_init.v"/>
+        <Attr Name="ImportTime" Val="1517939175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/Audio_Codec_Wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab 2/code/Audio_Codec_Wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1517939158"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/TWICtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab 2/code/TWICtl.vhd"/>
+        <Attr Name="ImportTime" Val="1517939183"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/i2s_ctl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab 2/code/i2s_ctl.vhd"/>
+        <Attr Name="ImportTime" Val="1517939168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lab4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lab4"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/code/Lab2.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab 3/code/lab3/lab3.srcs/constrs_1/imports/code/Lab2.xdc"/>
+        <Attr Name="ImportTime" Val="1517939190"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+</GenRun>

@@ -1,0 +1,1 @@
+This folder contains data files used for various programming projects.

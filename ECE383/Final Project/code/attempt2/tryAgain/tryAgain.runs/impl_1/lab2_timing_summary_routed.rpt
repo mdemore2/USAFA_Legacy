@@ -1,0 +1,981 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri May  4 13:10:10 2018
+| Host         : c19mademore running 64-bit Service Pack 1  (build 7601)
+| Command      : report_timing_summary -file lab2_timing_summary_routed.rpt -warn_on_violation -rpx lab2_timing_summary_routed.rpx
+| Design       : lab2
+| Device       : 7a200t-sbg484
+| Speed File   : -1  PRODUCTION 1.19 2017-08-11
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 549 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 125 register/latch pins with no clock driven by root clock pin: datapath/clk_div_reg[21]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: datapath/firstLab/video_inst/Inst_vga/scpFace/divider_reg[23]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/left_filter_lpf500/q_reg_reg[0]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/left_filter_lpf500/q_reg_reg[1]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/left_filter_lpf500/q_reg_reg[2]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/left_filter_lpf500/state_reg_reg/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/right_filter_lpf500/q_reg_reg[0]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/right_filter_lpf500/q_reg_reg[1]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/right_filter_lpf500/q_reg_reg[2]/Q (HIGH)
+
+ There are 58 register/latch pins with no clock driven by root clock pin: datapath/right_filter_lpf500/state_reg_reg/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[0]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[10]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[11]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[12]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[13]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[14]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[15]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[16]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[17]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[1]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[2]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[3]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[4]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[5]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[6]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[7]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[8]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: datapath/s510_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 1759 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 5 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 9 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 13 combinational latch loops in the design through latch input (HIGH)
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      2.954        0.000                      0                  377        0.050        0.000                      0                  377        3.000        0.000                       0                   231  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                                                                   Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                                                                   ------------         ----------      --------------
+datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1              {0.000 5.000}        10.000          100.000         
+  clk_out1_clk_wiz_1                                                    {0.000 40.687}       81.375          12.289          
+  clk_out2_clk_wiz_1                                                    {0.000 10.000}       20.000          50.000          
+  clkfbout_clk_wiz_1                                                    {0.000 5.000}        10.000          100.000         
+datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1  {0.000 5.000}        10.000          100.000         
+  clk_out1_clk_wiz_0                                                    {0.000 20.000}       40.000          25.000          
+  clk_out2_clk_wiz_0                                                    {0.000 4.000}        8.000           125.000         
+  clkfbout_clk_wiz_0                                                    {0.000 5.000}        10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                                                       WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                                                       -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1                                                                                                                                                                3.000        0.000                       0                     1  
+  clk_out1_clk_wiz_1                                                                                                                                                                                                     79.220        0.000                       0                     2  
+  clk_out2_clk_wiz_1                                                         13.829        0.000                      0                  207        0.144        0.000                      0                  207        9.500        0.000                       0                   117  
+  clkfbout_clk_wiz_1                                                                                                                                                                                                      7.845        0.000                       0                     3  
+datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1                                                                                                                                                    3.000        0.000                       0                     1  
+  clk_out1_clk_wiz_0                                                         27.458        0.000                      0                  101        0.121        0.000                      0                  101       19.500        0.000                       0                    58  
+  clk_out2_clk_wiz_0                                                          2.954        0.000                      0                   63        0.134        0.000                      0                   63        3.500        0.000                       0                    46  
+  clkfbout_clk_wiz_0                                                                                                                                                                                                      7.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock          To Clock                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------          --------                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+clk_out1_clk_wiz_0  clk_out2_clk_wiz_0        4.572        0.000                      0                   30        0.050        0.000                      0                   30  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+  To Clock:  datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_1
+  To Clock:  clk_out1_clk_wiz_1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       79.220ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clk_wiz_1
+Waveform(ns):       { 0.000 40.688 }
+Period(ns):         81.375
+Sources:            { datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         81.375      79.220     BUFGCTRL_X0Y1    datapath/audioWrapper/audiocodec_master_clock/inst/clkout1_buf/I
+Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       81.375      131.985    MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT0
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_clk_wiz_1
+  To Clock:  clk_out2_clk_wiz_1
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.829ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.144ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.829ns  (required time - arrival time)
+  Source:                 datapath/audioWrapper/initialize_audio/twi_controller/sclCnt_reg[1]/C
+                            (rising edge-triggered cell FDSE clocked by clk_out2_clk_wiz_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_out2_clk_wiz_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_out2_clk_wiz_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_out2_clk_wiz_1 rise@20.000ns - clk_out2_clk_wiz_1 rise@0.000ns)
+  Data Path Delay:        5.843ns  (logic 1.990ns (34.056%)  route 3.853ns (65.944%))
+  Logic Levels:           6  (LUT2=1 LUT3=1 LUT5=1 LUT6=2 MUXF7=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.705ns = ( 21.705 - 20.000 ) 
+    Source Clock Delay      (SCD):    1.824ns
+    Clock Pessimism Removal (CPR):    0.080ns
+  Clock Uncertainty:      0.084ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.152ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_clk_wiz_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.761     1.761    datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.701    -1.939 r  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.843    -0.096    datapath/audioWrapper/audiocodec_master_clock/inst/clk_out2_clk_wiz_1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.096    -0.000 r  datapath/audioWrapper/audiocodec_master_clock/inst/clkout2_buf/O
+                         net (fo=115, routed)         1.824     1.824    datapath/audioWrapper/initialize_audio/twi_controller/CLK
+    SLICE_X162Y116       FDSE                                         r  datapath/audioWrapper/initialize_audio/twi_controller/sclCnt_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X162Y116       FDSE (Prop_fdse_C_Q)         0.518     2.342 f  datapath/audioWrapper/initialize_audio/twi_controller/sclCnt_reg[1]/Q
+                         net (fo=6, routed)           1.137     3.480    datapath/audioWrapper/initialize_audio/twi_controller/sclCnt_reg__0[1]
+    SLICE_X162Y117       LUT6 (Prop_lut6_I3_O)        0.124     3.604 f  datapath/audioWrapper/initialize_audio/twi_controller/sclCnt[6]_i_4/O
+                         net (fo=2, routed)           0.452     4.056    datapath/audioWrapper/initialize_audio/twi_controller/sclCnt[6]_i_4_n_0
+    SLICE_X162Y117       LUT2 (Prop_lut2_I0_O)        0.150     4.206 f  datapath/audioWrapper/initialize_audio/twi_controller/subState[1]_i_2/O
+                         net (fo=12, routed)          0.897     5.102    datapath/audioWrapper/initialize_audio/twi_controller/subState[1]_i_2_n_0
+    SLICE_X161Y116       LUT3 (Prop_lut3_I2_O)        0.356     5.458 r  datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state[3]_i_3/O
+                         net (fo=5, routed)           0.347     5.806    datapath/audioWrapper/initialize_audio/twi_controller/p_19_in
+    SLICE_X160Y115       LUT6 (Prop_lut6_I5_O)        0.326     6.132 r  datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state[3]_i_9/O
+                         net (fo=1, routed)           0.000     6.132    datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state[3]_i_9_n_0
+    SLICE_X160Y115       MUXF7 (Prop_muxf7_I1_O)      0.217     6.349 r  datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state_reg[3]_i_5/O
+                         net (fo=1, routed)           0.659     7.008    datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state_reg[3]_i_5_n_0
+    SLICE_X161Y115       LUT5 (Prop_lut5_I4_O)        0.299     7.307 r  datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state[3]_i_1/O
+                         net (fo=4, routed)           0.360     7.668    datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state[3]_i_1_n_0
+    SLICE_X159Y115       FDRE                                         r  datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_clk_wiz_1 rise edge)
+                                                     20.000    20.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000    20.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.643    21.643    datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.494    18.149 r  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.760    19.909    datapath/audioWrapper/audiocodec_master_clock/inst/clk_out2_clk_wiz_1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.091    20.000 r  datapath/audioWrapper/audiocodec_master_clock/inst/clkout2_buf/O
+                         net (fo=115, routed)         1.705    21.705    datapath/audioWrapper/initialize_audio/twi_controller/CLK
+    SLICE_X159Y115       FDRE                                         r  datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state_reg[3]/C
+                         clock pessimism              0.080    21.785    
+                         clock uncertainty           -0.084    21.702    
+    SLICE_X159Y115       FDRE (Setup_fdre_C_CE)      -0.205    21.497    datapath/audioWrapper/initialize_audio/twi_controller/FSM_gray_state_reg[3]
+  -------------------------------------------------------------------
+                         required time                         21.497    
+                         arrival time                          -7.668    
+  -------------------------------------------------------------------
+                         slack                                 13.829    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_clk_wiz_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_clk_wiz_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_out2_clk_wiz_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_clk_wiz_1 rise@0.000ns - clk_out2_clk_wiz_1 rise@0.000ns)
+  Data Path Delay:        0.278ns  (logic 0.186ns (66.849%)  route 0.092ns (33.151%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.912ns
+    Source Clock Delay      (SCD):    0.641ns
+    Clock Pessimism Removal (CPR):    0.258ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_clk_wiz_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         0.610     0.610    datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.180    -0.571 r  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.545    -0.026    datapath/audioWrapper/audiocodec_master_clock/inst/clk_out2_clk_wiz_1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.026     0.000 r  datapath/audioWrapper/audiocodec_master_clock/inst/clkout2_buf/O
+                         net (fo=115, routed)         0.641     0.641    datapath/audioWrapper/initialize_audio/twi_controller/CLK
+    SLICE_X159Y117       FDRE                                         r  datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X159Y117       FDRE (Prop_fdre_C_Q)         0.141     0.782 r  datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[0]/Q
+                         net (fo=3, routed)           0.092     0.874    datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg_n_0_[0]
+    SLICE_X158Y117       LUT4 (Prop_lut4_I2_O)        0.045     0.919 r  datapath/audioWrapper/initialize_audio/twi_controller/dataByte[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.919    datapath/audioWrapper/initialize_audio/twi_controller/p_1_in[1]
+    SLICE_X158Y117       FDRE                                         r  datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_clk_wiz_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         0.879     0.879    datapath/audioWrapper/audiocodec_master_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.502    -0.624 r  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.595    -0.029    datapath/audioWrapper/audiocodec_master_clock/inst/clk_out2_clk_wiz_1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.029    -0.000 r  datapath/audioWrapper/audiocodec_master_clock/inst/clkout2_buf/O
+                         net (fo=115, routed)         0.912     0.912    datapath/audioWrapper/initialize_audio/twi_controller/CLK
+    SLICE_X158Y117       FDRE                                         r  datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[1]/C
+                         clock pessimism             -0.258     0.654    
+    SLICE_X158Y117       FDRE (Hold_fdre_C_D)         0.121     0.775    datapath/audioWrapper/initialize_audio/twi_controller/dataByte_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.775    
+                         arrival time                           0.919    
+  -------------------------------------------------------------------
+                         slack                                  0.144    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_clk_wiz_1
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         20.000      17.845     BUFGCTRL_X0Y4    datapath/audioWrapper/audiocodec_master_clock/inst/clkout2_buf/I
+Max Period        n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       20.000      193.360    MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKOUT1
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         10.000      9.500      SLICE_X155Y122   datapath/audioWrapper/initialize_audio/delaycnt_reg[21]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         10.000      9.500      SLICE_X159Y118   datapath/audioWrapper/initialize_audio/data_i_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_1
+  To Clock:  clkfbout_clk_wiz_1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y8    datapath/audioWrapper/audiocodec_master_clock/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y2  datapath/audioWrapper/audiocodec_master_clock/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+  To Clock:  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_0
+  To Clock:  clk_out1_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       27.458ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.121ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             27.458ns  (required time - arrival time)
+  Source:                 datapath/firstLab/video_inst/Inst_vga/cntH/processQ_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/encoded_reg[8]/S
+                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        12.073ns  (logic 2.785ns (23.067%)  route 9.288ns (76.933%))
+  Logic Levels:           11  (CARRY4=2 LUT2=1 LUT3=1 LUT5=1 LUT6=6)
+  Clock Path Skew:        0.055ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.714ns = ( 41.714 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.739ns
+    Clock Pessimism Removal (CPR):    0.080ns
+  Clock Uncertainty:      0.095ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         2.106     2.106    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.900    -2.793 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.697    -0.096    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.096    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O
+                         net (fo=56, routed)          1.739     1.739    datapath/firstLab/video_inst/Inst_vga/cntH/CLK
+    SLICE_X152Y127       FDRE                                         r  datapath/firstLab/video_inst/Inst_vga/cntH/processQ_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X152Y127       FDRE (Prop_fdre_C_Q)         0.518     2.257 f  datapath/firstLab/video_inst/Inst_vga/cntH/processQ_reg[4]/Q
+                         net (fo=17, routed)          1.015     3.272    datapath/firstLab/video_inst/Inst_vga/cntH/Q[4]
+    SLICE_X153Y129       LUT3 (Prop_lut3_I1_O)        0.152     3.424 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_103/O
+                         net (fo=1, routed)           0.614     4.038    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_103_n_0
+    SLICE_X154Y129       LUT6 (Prop_lut6_I5_O)        0.326     4.364 f  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_48/O
+                         net (fo=12, routed)          1.721     6.085    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_48_n_0
+    SLICE_X156Y133       LUT6 (Prop_lut6_I5_O)        0.124     6.209 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_71/O
+                         net (fo=1, routed)           0.957     7.166    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_71_n_0
+    SLICE_X153Y131       LUT6 (Prop_lut6_I0_O)        0.124     7.290 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_36/O
+                         net (fo=4, routed)           0.849     8.139    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_36_n_0
+    SLICE_X154Y131       LUT6 (Prop_lut6_I2_O)        0.124     8.263 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_26/O
+                         net (fo=4, routed)           0.940     9.203    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_26_n_0
+    SLICE_X157Y130       LUT5 (Prop_lut5_I2_O)        0.124     9.327 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_21/O
+                         net (fo=1, routed)           0.000     9.327    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_21_n_0
+    SLICE_X157Y130       CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     9.728 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias_reg[3]_i_13/CO[3]
+                         net (fo=1, routed)           0.000     9.728    datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias_reg[3]_i_13_n_0
+    SLICE_X157Y131       CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     9.999 f  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias_reg[3]_i_8/CO[0]
+                         net (fo=1, routed)           0.456    10.455    datapath/firstLab/video_inst/Inst_vga/cntH/ch1_wave
+    SLICE_X158Y131       LUT6 (Prop_lut6_I4_O)        0.373    10.828 r  datapath/firstLab/video_inst/Inst_vga/cntH/dc_bias[3]_i_5/O
+                         net (fo=3, routed)           1.157    11.985    datapath/firstLab/video_inst/Inst_vga/scpFace/processQ_reg[9]
+    SLICE_X158Y139       LUT2 (Prop_lut2_I1_O)        0.124    12.109 f  datapath/firstLab/video_inst/Inst_vga/scpFace/dc_bias[3]_i_4/O
+                         net (fo=6, routed)           0.950    13.059    datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/cycle_reg[0]
+    SLICE_X160Y148       LUT6 (Prop_lut6_I5_O)        0.124    13.183 r  datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/encoded[8]_i_1/O
+                         net (fo=1, routed)           0.630    13.813    datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/encoded0_in[8]
+    SLICE_X160Y148       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/encoded_reg[8]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000    40.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.972    41.972    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.637    37.335 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.574    39.909    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.091    40.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O
+                         net (fo=56, routed)          1.714    41.714    datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/CLK
+    SLICE_X160Y148       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/encoded_reg[8]/C
+                         clock pessimism              0.080    41.794    
+                         clock uncertainty           -0.095    41.700    
+    SLICE_X160Y148       FDSE (Setup_fdse_C_S)       -0.429    41.271    datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_red/encoded_reg[8]
+  -------------------------------------------------------------------
+                         required time                         41.271    
+                         arrival time                         -13.813    
+  -------------------------------------------------------------------
+                         slack                                 27.458    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.121ns  (arrival time - required time)
+  Source:                 datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_blue/encoded_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.919ns
+    Source Clock Delay      (SCD):    0.646ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         0.745     0.745    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.683    -0.938 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.912    -0.026    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.026    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O
+                         net (fo=56, routed)          0.646     0.646    datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_blue/CLK
+    SLICE_X159Y141       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_blue/encoded_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X159Y141       FDRE (Prop_fdre_C_Q)         0.141     0.787 r  datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_blue/encoded_reg[9]/Q
+                         net (fo=1, routed)           0.056     0.842    datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_blue_n_2
+    SLICE_X159Y141       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.022     1.022    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.040    -1.018 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.989    -0.029    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.029    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O
+                         net (fo=56, routed)          0.919     0.919    datapath/firstLab/video_inst/inst_dvid/CLK
+    SLICE_X159Y141       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[9]/C
+                         clock pessimism             -0.273     0.646    
+    SLICE_X159Y141       FDRE (Hold_fdre_C_D)         0.076     0.722    datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -0.722    
+                         arrival time                           0.842    
+  -------------------------------------------------------------------
+                         slack                                  0.121    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clk_wiz_0
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         40.000      37.845     BUFGCTRL_X0Y7    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/I
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       40.000      173.360    MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X158Y141   datapath/firstLab/video_inst/inst_dvid/TDMS_encoder_blue/dc_bias_reg[0]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X154Y127   datapath/firstLab/video_inst/Inst_vga/cntH/processQ_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_clk_wiz_0
+  To Clock:  clk_out2_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.954ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.134ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.954ns  (required time - arrival time)
+  Source:                 datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_clk_wiz_0  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]/S
+                            (rising edge-triggered cell FDSE clocked by clk_out2_clk_wiz_0  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_out2_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_out2_clk_wiz_0 rise@8.000ns - clk_out2_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.210ns  (logic 0.919ns (21.830%)  route 3.291ns (78.170%))
+  Logic Levels:           3  (LUT2=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.033ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.706ns = ( 9.706 - 8.000 ) 
+    Source Clock Delay      (SCD):    1.833ns
+    Clock Pessimism Removal (CPR):    0.094ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.125ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         2.106     2.106    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.900    -2.793 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.697    -0.096    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O
+                         net (fo=44, routed)          1.833     1.833    datapath/firstLab/video_inst/inst_dvid/clk_out2
+    SLICE_X162Y147       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X162Y147       FDRE (Prop_fdre_C_Q)         0.518     2.351 f  datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[7]/Q
+                         net (fo=2, routed)           1.089     3.440    datapath/firstLab/video_inst/inst_dvid/shift_clock_reg_n_0_[7]
+    SLICE_X163Y147       LUT6 (Prop_lut6_I3_O)        0.124     3.564 f  datapath/firstLab/video_inst/inst_dvid/shift_red[9]_i_2/O
+                         net (fo=1, routed)           0.451     4.015    datapath/firstLab/video_inst/inst_dvid/shift_red[9]_i_2_n_0
+    SLICE_X163Y147       LUT5 (Prop_lut5_I0_O)        0.124     4.139 f  datapath/firstLab/video_inst/inst_dvid/shift_red[9]_i_1/O
+                         net (fo=33, routed)          1.219     5.358    datapath/firstLab/video_inst/inst_dvid/shift_red[9]_i_1_n_0
+    SLICE_X162Y133       LUT2 (Prop_lut2_I1_O)        0.153     5.511 r  datapath/firstLab/video_inst/inst_dvid/shift_red[7]_i_1/O
+                         net (fo=5, routed)           0.532     6.043    datapath/firstLab/video_inst/inst_dvid/shift_red[7]_i_1_n_0
+    SLICE_X162Y133       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_clk_wiz_0 rise edge)
+                                                      8.000     8.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     8.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.972     9.972    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.637     5.335 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.574     7.909    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     8.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O
+                         net (fo=44, routed)          1.706     9.706    datapath/firstLab/video_inst/inst_dvid/clk_out2
+    SLICE_X162Y133       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]/C
+                         clock pessimism              0.094     9.800    
+                         clock uncertainty           -0.072     9.728    
+    SLICE_X162Y133       FDSE (Setup_fdse_C_S)       -0.731     8.997    datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]
+  -------------------------------------------------------------------
+                         required time                          8.997    
+                         arrival time                          -6.043    
+  -------------------------------------------------------------------
+                         slack                                  2.954    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_clk_wiz_0  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_clk_wiz_0  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_out2_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_clk_wiz_0 rise@0.000ns - clk_out2_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.209ns  (logic 0.141ns (67.454%)  route 0.068ns (32.546%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.922ns
+    Source Clock Delay      (SCD):    0.649ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         0.745     0.745    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.683    -0.938 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.912    -0.026    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O
+                         net (fo=44, routed)          0.649     0.649    datapath/firstLab/video_inst/inst_dvid/clk_out2
+    SLICE_X163Y147       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X163Y147       FDRE (Prop_fdre_C_Q)         0.141     0.790 r  datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[0]/Q
+                         net (fo=3, routed)           0.068     0.858    datapath/firstLab/video_inst/inst_dvid/shift_clock[0]
+    SLICE_X163Y147       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.022     1.022    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.040    -1.018 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.989    -0.029    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O
+                         net (fo=44, routed)          0.922     0.922    datapath/firstLab/video_inst/inst_dvid/clk_out2
+    SLICE_X163Y147       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[8]/C
+                         clock pessimism             -0.273     0.649    
+    SLICE_X163Y147       FDRE (Hold_fdre_C_D)         0.075     0.724    datapath/firstLab/video_inst/inst_dvid/shift_clock_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -0.724    
+                         arrival time                           0.858    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_clk_wiz_0
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         8.000       5.845      BUFGCTRL_X0Y0    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/I
+Max Period        n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       8.000       205.360    MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+Low Pulse Width   Slow    FDSE/C              n/a            0.500         4.000       3.500      SLICE_X163Y140   datapath/firstLab/video_inst/inst_dvid/shift_green_reg[0]/C
+High Pulse Width  Slow    FDSE/C              n/a            0.500         4.000       3.500      SLICE_X163Y141   datapath/firstLab/video_inst/inst_dvid/shift_blue_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y9    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_0
+  To Clock:  clk_out2_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.572ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.050ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.572ns  (required time - arrival time)
+  Source:                 datapath/firstLab/video_inst/inst_dvid/latched_red_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]/S
+                            (rising edge-triggered cell FDSE clocked by clk_out2_clk_wiz_0  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_out2_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_out2_clk_wiz_0 rise@8.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.236ns  (logic 0.747ns (33.413%)  route 1.489ns (66.587%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.246ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.706ns = ( 9.706 - 8.000 ) 
+    Source Clock Delay      (SCD):    1.824ns
+    Clock Pessimism Removal (CPR):    -0.128ns
+  Clock Uncertainty:      0.215ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         2.106     2.106    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.900    -2.793 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.697    -0.096    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.096    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O
+                         net (fo=56, routed)          1.824     1.824    datapath/firstLab/video_inst/inst_dvid/CLK
+    SLICE_X161Y133       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/latched_red_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X161Y133       FDRE (Prop_fdre_C_Q)         0.419     2.243 r  datapath/firstLab/video_inst/inst_dvid/latched_red_reg[0]/Q
+                         net (fo=1, routed)           0.957     3.200    datapath/firstLab/video_inst/inst_dvid/latched_red[0]
+    SLICE_X162Y133       LUT2 (Prop_lut2_I0_O)        0.328     3.528 r  datapath/firstLab/video_inst/inst_dvid/shift_red[7]_i_1/O
+                         net (fo=5, routed)           0.532     4.060    datapath/firstLab/video_inst/inst_dvid/shift_red[7]_i_1_n_0
+    SLICE_X162Y133       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_clk_wiz_0 rise edge)
+                                                      8.000     8.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     8.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.972     9.972    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.637     5.335 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.574     7.909    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     8.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O
+                         net (fo=44, routed)          1.706     9.706    datapath/firstLab/video_inst/inst_dvid/clk_out2
+    SLICE_X162Y133       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]/C
+                         clock pessimism             -0.128     9.578    
+                         clock uncertainty           -0.215     9.364    
+    SLICE_X162Y133       FDSE (Setup_fdse_C_S)       -0.731     8.633    datapath/firstLab/video_inst/inst_dvid/shift_red_reg[0]
+  -------------------------------------------------------------------
+                         required time                          8.633    
+                         arrival time                          -4.060    
+  -------------------------------------------------------------------
+                         slack                                  4.572    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.050ns  (arrival time - required time)
+  Source:                 datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            datapath/firstLab/video_inst/inst_dvid/shift_blue_reg[0]/S
+                            (rising edge-triggered cell FDSE clocked by clk_out2_clk_wiz_0  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_out2_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.600ns  (logic 0.226ns (37.638%)  route 0.374ns (62.362%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.354ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.920ns
+    Source Clock Delay      (SCD):    0.646ns
+    Clock Pessimism Removal (CPR):    -0.080ns
+  Clock Uncertainty:      0.215ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         0.745     0.745    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.683    -0.938 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.912    -0.026    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.026    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O
+                         net (fo=56, routed)          0.646     0.646    datapath/firstLab/video_inst/inst_dvid/CLK
+    SLICE_X159Y141       FDRE                                         r  datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X159Y141       FDRE (Prop_fdre_C_Q)         0.128     0.774 r  datapath/firstLab/video_inst/inst_dvid/latched_blue_reg[0]/Q
+                         net (fo=1, routed)           0.169     0.943    datapath/firstLab/video_inst/inst_dvid/latched_blue[0]
+    SLICE_X163Y142       LUT2 (Prop_lut2_I0_O)        0.098     1.041 r  datapath/firstLab/video_inst/inst_dvid/shift_blue[7]_i_1/O
+                         net (fo=5, routed)           0.205     1.246    datapath/firstLab/video_inst/inst_dvid/shift_blue[7]_i_1_n_0
+    SLICE_X163Y141       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_blue_reg[0]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y2        BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=551, routed)         1.022     1.022    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.040    -1.018 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.989    -0.029    datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -0.000 r  datapath/firstLab/video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O
+                         net (fo=44, routed)          0.920     0.920    datapath/firstLab/video_inst/inst_dvid/clk_out2
+    SLICE_X163Y141       FDSE                                         r  datapath/firstLab/video_inst/inst_dvid/shift_blue_reg[0]/C
+                         clock pessimism              0.080     1.000    
+                         clock uncertainty            0.215     1.214    
+    SLICE_X163Y141       FDSE (Hold_fdse_C_S)        -0.018     1.196    datapath/firstLab/video_inst/inst_dvid/shift_blue_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.196    
+                         arrival time                           1.246    
+  -------------------------------------------------------------------
+                         slack                                  0.050    
+
+
+
+
+
